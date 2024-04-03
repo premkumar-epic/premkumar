@@ -1,7 +1,7 @@
 # Prem Kumar
 
 I'm Prem Kumar, a student currently pursuing a Bachelor's degree in Artificial Intelligence and Machine Learning. I'm passionate about transforming ideas into reality using the power of technology.
-
+>Life is about living and enjoying it.🌟
 ## About Me 📚
 
 - 🎓 Studying **Artificial Intelligence & Machine Learning**.
