@@ -17,7 +17,7 @@ I'm Prem Kumar, a student currently pursuing a Bachelor's degree in Artificial I
 > 
 > 🛠️ Built using **React** (frontend) and **Flask** (backend), it delivers a clean, clutter-free user experience for conscious creators and audiences alike.
 > 
-> 🌐 **GitHub Repo:** [View the project on GitHub](https://github.com/your-username/rec-and-post)
+> 🌐 **GitHub Repo:** [View the project on GitHub](https://github.com/premkumar-epic/Rec-Post)
 > 
 > ✨ Join the movement — **Post with Purpose!** 📢💡🌍
 ---
