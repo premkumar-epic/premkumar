@@ -50,9 +50,10 @@ I'm Prem Kumar, a student currently pursuing a Bachelor's degree in Artificial I
 
 ## How to Reach Me 📫
 
-Feel free to reach out if you want to collaborate on a project, need some advice, or just want to chat. You can also follow me on 
- [LinkedIn](https://www.linkedin.com/in/premkumar-25-8055p/) 
- [Twitter](https://twitter.com/PremKumar253) 
- [Instagram](https://www.instagram.com/prem.kumar.2.5/)
+Feel free to reach out if you want to collaborate on a project, need some advice, or just want to chat.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/premkumar-25-8055p/)  
+[![Twitter](https://img.shields.io/badge/Twitter-black?style=for-the-badge&logo=twitter)](https://twitter.com/PremKumar253)  
+[![Instagram](https://img.shields.io/badge/Instagram-red?style=for-the-badge&logo=instagram)](https://www.instagram.com/prem.kumar.2.5/)
 
 Thanks for stopping by! 😊
