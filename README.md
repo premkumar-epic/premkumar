@@ -17,7 +17,7 @@ I'm Prem Kumar, a student currently pursuing a Bachelor's degree in Artificial I
 > 
 > 🛠️ Built using **React** (frontend) and **Flask** (backend), it delivers a clean, clutter-free user experience for conscious creators and audiences alike.
 > 
-> 🌐 **GitHub Repo:** [View the project on GitHub](https://github.com/premkumar-epic/Rec-Post)
+> 🌐 **GitHub Repo:** [Rec&Post](https://github.com/premkumar-epic/Rec-Post)
 > 
 > ✨ Join the movement — **Post with Purpose!** 📢💡🌍
 ---
@@ -33,7 +33,7 @@ I'm Prem Kumar, a student currently pursuing a Bachelor's degree in Artificial I
 > 
 > 💻 Developed with **React** for the frontend and **Flask** for the backend, this platform offers a modern, intuitive interface for seamless medical record review.
 > 
-> 🌐 **GitHub Repo:** [View the project on GitHub](https://github.com/premkumar-epic/ai-patient-record-analyser)
+> 🌐 **GitHub Repo:** [ai-patient-record-analyser](https://github.com/premkumar-epic/ai-patient-record-analyser)
 > 
 > 💡 Empowering healthcare with intelligence, one record at a time. 📊🧠💉
 >
