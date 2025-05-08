@@ -38,6 +38,12 @@ I'm Prem Kumar, a student currently pursuing a Bachelor's degree in Artificial I
 > 💡 Empowering healthcare with intelligence, one record at a time. 📊🧠💉
 >
 
+### 🧠 `FocusPilot – Your AI Productivity Co-Pilot` *(In Progress)*  
+An all-in-one platform to manage tasks, build habits, and track learning goals with the help of AI.  
+Combines AutoPrioritize, FocusFlow, HabitForge, and LearnStack into a sleek, powerful productivity system.  
+> 🔧 **Stack:** React, Firebase, OpenAI API, Tailwind CSS  
+> 📌 Features: AI task manager, Pomodoro focus tracker, habit builder, learning roadmap, and more.  
+> 🧠 Boost productivity. Learn smarter. Live better.
 ## About Me 📚
 
 - 🎓 Studying **Artificial Intelligence & Machine Learning**.
