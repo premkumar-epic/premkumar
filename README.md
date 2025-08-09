@@ -20,16 +20,27 @@
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=default&hide_border=true#gh-light-mode-only" />
-  <img src="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=tokyonight&hide_border=true#gh-dark-mode-only" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=default&hide_border=true" />
+    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=default&hide_border=true" />
+  </picture>
 </p>
+
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=premkumar-epic&theme=default&hide_border=true#gh-light-mode-only" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=premkumar-epic&theme=tokyonight&hide_border=true#gh-dark-mode-only" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=premkumar-epic&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com?user=premkumar-epic&theme=default&hide_border=true" />
+    <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com?user=premkumar-epic&theme=default&hide_border=true" />
+  </picture>
 </p>
+
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=premkumar-epic&layout=compact&theme=default&hide_border=true#gh-light-mode-only" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=premkumar-epic&layout=compact&theme=tokyonight&hide_border=true#gh-dark-mode-only" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=premkumar-epic&layout=compact&theme=tokyonight&hide_border=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=premkumar-epic&layout=compact&theme=default&hide_border=true" />
+    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=premkumar-epic&layout=compact&theme=default&hide_border=true" />
+  </picture>
 </p>
 
 ---
@@ -94,6 +105,15 @@ An **all-in-one platform to manage tasks, build habits, and track learning goals
 
 ---
 
+### 🐍 Contribution Snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/premkumar-epic/premkumar/blob/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/premkumar-epic/premkumar/blob/output/snake.svg" />
+  <img alt="github contribution grid snake animation" src="https://github.com/premkumar-epic/premkumar/blob/output/snake.svg" />
+</picture>
+---
+
 ## 🔭 What I'm Focused On
 
 - 🤔 Exploring new technologies.
@@ -114,12 +134,3 @@ An **all-in-one platform to manage tasks, build habits, and track learning goals
   <b>Discord:</b> prem.kumar.2.5
 </p>
 
----
-
-### 🐍 Contribution Snake
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/premkumar-epic/premkumar/blob/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/premkumar-epic/premkumar/blob/output/snake.svg" />
-  <img alt="github contribution grid snake animation" src="https://github.com/premkumar-epic/premkumar/blob/output/snake.svg" />
-</picture>
