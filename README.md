@@ -18,6 +18,7 @@
 ---
 
 ## 📊 GitHub Stats
+
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=default&hide_border=true#gh-light-mode-only" />
   <img src="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=tokyonight&hide_border=true#gh-dark-mode-only" />
@@ -38,20 +39,22 @@
 <details>
 <summary><b>✨🚀 Epic-Drive - Web-Based File Management Interface 🚀✨</b></summary>
 
-🌟 **Status:** IN PROGRESS  
-☁️ **Epic-Drive** is a **web-based file management interface** designed for a **clean, intuitive, and highly responsive user experience**.  
-🛠️ **Stack:** HTML5, CSS3 (Tailwind CSS), JavaScript  
-🌐 **GitHub Repo:** [Epic-Drive](https://github.com/premkumar-epic/Epic-Drive)  
+🌟 **Status:** IN PROGRESS
+☁️ **Epic-Drive** is a **web-based file management interface** designed for a **clean, intuitive, and highly responsive user experience**.
+🛠️ **Stack:** HTML5, CSS3 (Tailwind CSS), JavaScript
+🌐 **GitHub Repo:** [Epic-Drive](https://github.com/premkumar-epic/Epic-Drive)
 ✨ **Simplify your file management experience with purpose and style!**
+
 </details>
 
 <details>
 <summary><b>🧠💡 FocusPilot – Your AI Productivity Co-Pilot 💡🧠</b></summary>
 
-An **all-in-one platform to manage tasks, build habits, and track learning goals** with the help of AI.  
-🔧 **Stack:** React, Firebase, OpenAI API, Tailwind CSS  
-📌 Features: AI task manager, Pomodoro focus tracker, habit builder, learning roadmap, and more.  
+An **all-in-one platform to manage tasks, build habits, and track learning goals** with the help of AI.
+🔧 **Stack:** React, Firebase, OpenAI API, Tailwind CSS
+📌 Features: AI task manager, Pomodoro focus tracker, habit builder, learning roadmap, and more.
 🧠 Boost productivity. Learn smarter. Live better.
+
 </details>
 
 ---
@@ -61,43 +64,45 @@ An **all-in-one platform to manage tasks, build habits, and track learning goals
 <details>
 <summary><b>🎯 Code Carnage - 24hr Hackathon @ SJBIT</b></summary>
 
-🚀 **Project:** Rec&Post  
-🎥 A social media platform for **meaningful, awareness-driven videos**.  
-🛠️ **Stack:** React (Frontend), Flask (Backend)  
-🌐 **Repo:** [Rec&Post](https://github.com/premkumar-epic/Rec-Post)  
+🚀 **Project:** Rec&Post
+🎥 A social media platform for **meaningful, awareness-driven videos**.
+🛠️ **Stack:** React (Frontend), Flask (Backend)
+🌐 **Repo:** [Rec&Post](https://github.com/premkumar-epic/Rec-Post)
 ✨ **Post with Purpose!**
+
 </details>
 
 <details>
 <summary><b>🎯 Internal Hackathon @ SEACET</b></summary>
 
-🤖 **Project:** AI Patient Record Analyser  
-🩺 Helps doctors with **early diagnosis suggestions** by analyzing patient data.  
-🛠️ **Stack:** React (Frontend), Flask (Backend)  
-🌐 **Repo:** [ai-patient-record-analyser](https://github.com/premkumar-epic/ai-patient-record-analyser)  
+🤖 **Project:** AI Patient Record Analyser
+🩺 Helps doctors with **early diagnosis suggestions** by analyzing patient data.
+🛠️ **Stack:** React (Frontend), Flask (Backend)
+🌐 **Repo:** [ai-patient-record-analyser](https://github.com/premkumar-epic/ai-patient-record-analyser)
 💡 Empowering healthcare with intelligence.
+
 </details>
 
 ---
-![GitHub Snake Light](https://raw.githubusercontent.com/premkumar-epic/premkumar-epic/output/snake.svg#gh-light-mode-only)
-![GitHub Snake Dark](https://raw.githubusercontent.com/premkumar-epic/premkumar-epic/output/snake.svg#gh-dark-mode-only) 
 
----
 ## 📚 About Me
-- 🎓 Studying **Artificial Intelligence & Machine Learning**.  
-- 🎨 Skilled in **Design** with an eye for detail.  
-- 📊 Experienced in **Digital Marketing**.  
+
+- 🎓 Studying **Artificial Intelligence & Machine Learning**.
+- 🎨 Skilled in **Design** with an eye for detail.
+- 📊 Experienced in **Digital Marketing**.
 - 💻 Passionate about **Development** & learning new tech.
 
 ---
 
 ## 🔭 What I'm Focused On
-- 🤔 Exploring new technologies.  
+
+- 🤔 Exploring new technologies.
 - ⚡ Building quick hacks & impactful solutions.
 
 ---
 
 ## 📬 How to Reach Me
+
 <p align="center">
   <a href="mailto:premkumar.dev25@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/premkumar-25-8055p/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
@@ -112,6 +117,7 @@ An **all-in-one platform to manage tasks, build habits, and track learning goals
 ---
 
 ## 🐍 Contribution Snake
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/premkumar-epic/premkumar-epic/output/github-contribution-grid-snake-dark.svg">
