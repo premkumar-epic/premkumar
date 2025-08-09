@@ -79,7 +79,10 @@ An **all-in-one platform to manage tasks, build habits, and track learning goals
 </details>
 
 ---
+![GitHub Snake Light](https://raw.githubusercontent.com/premkumar-epic/premkumar-epic/output/snake.svg#gh-light-mode-only)
+![GitHub Snake Dark](https://raw.githubusercontent.com/premkumar-epic/premkumar-epic/output/snake.svg#gh-dark-mode-only) 
 
+---
 ## 📚 About Me
 - 🎓 Studying **Artificial Intelligence & Machine Learning**.  
 - 🎨 Skilled in **Design** with an eye for detail.  
