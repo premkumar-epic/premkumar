@@ -119,7 +119,7 @@ An **all-in-one platform to manage tasks, build habits, and track learning goals
 ### 🐍 Contribution Snake
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/premkumar-epic/premkumar/blob/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/premkumar-epic/premkumar/blob/output/github-contribution-grid-snake.svg" />
-  <img alt="github contribution grid snake animation" src="https://github.com/premkumar-epic/premkumar/blob/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/premkumar-epic/premkumar/blob/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/premkumar-epic/premkumar/blob/output/snake.svg" />
+  <img alt="github contribution grid snake animation" src="https://github.com/premkumar-epic/premkumar/blob/output/snake.svg" />
 </picture>
