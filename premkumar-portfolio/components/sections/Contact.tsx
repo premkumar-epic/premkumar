@@ -99,22 +99,23 @@ export default function Contact() {
                             <div className="space-y-6">
                                 <a
                                     href={`mailto:${personalInfo.email}`}
-                                    className="flex items-center gap-4 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
+                                    className="flex items-center gap-6 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group"
                                 >
-                                    <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/20 rounded-full flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-800/40 transition-colors">
+                                    <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/20 rounded-full flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-800/40 transition-colors flex-shrink-0">
                                         <Mail className="text-blue-600 dark:text-blue-400" size={20} />
                                     </div>
-                                    <div>
+                                    <div className="min-w-0">
                                         <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Email Me</p>
-                                        <p className="text-lg font-semibold">{personalInfo.email}</p>
+                                        <p className="text-lg font-semibold break-words">{personalInfo.email}</p>
                                     </div>
                                 </a>
 
-                                <div className="flex items-center gap-4 text-gray-600 dark:text-gray-300">
-                                    <div className="w-12 h-12 bg-purple-50 dark:bg-purple-900/20 rounded-full flex items-center justify-center">
+
+                                <div className="flex items-center gap-6 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors group">
+                                    <div className="w-12 h-12 bg-purple-50 dark:bg-purple-900/20 rounded-full flex items-center justify-center group-hover:bg-purple-100 dark:group-hover:bg-purple-800/40 transition-colors flex-shrink-0">
                                         <MapPin className="text-purple-600 dark:text-purple-400" size={20} />
                                     </div>
-                                    <div>
+                                    <div className="min-w-0">
                                         <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Location</p>
                                         <p className="text-lg font-semibold">{personalInfo.location}</p>
                                     </div>
