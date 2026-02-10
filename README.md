@@ -60,25 +60,15 @@ motto: "Transforming Ideas into Intelligent Solutions"
 
 ## 💼 Experience
 
-```mermaid
-timeline
-    title Professional Journey
-    2023-03 : Zetpeak (Assistant Manager)
-    2024-06 : Netpy (Full-Stack Intern)
-    2024-09 : SAP Lab India (Software Engineering Intern)
-    2026-05 : Graduation (SRMIST)
-```
-
-### Current Roles
-
-**🔹 SAP Lab India** - Software Engineering Intern  
+**🔹 SAP Lab India** - Software Engineering Intern (2025 - Present)  
 *Building enterprise-grade solutions with cutting-edge technologies*
 
-**🔹 Netpy** - Full-Stack Development Intern  
+**🔹 Netpy** - Full-Stack Development Intern (2025 - Present)  
 *Developing scalable web applications and APIs*
 
 **🔹 Zetpeak** - Assistant Manager (March 2023 – January 2025)  
 *Led technical initiatives, managed AICTE internship program, organized events*
+
 
 ---
 
