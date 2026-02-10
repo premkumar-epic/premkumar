@@ -1,436 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=https://premkumar.pro">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prem Kumar V - AI/ML Student & Full-Stack Developer Portfolio</title>
-
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Portfolio of Prem Kumar V - AI/ML Student and Full-Stack Developer specializing in React, Node.js, Python, TensorFlow, and PyTorch. View my projects, skills, and experience.">
-    <meta name="keywords"
-        content="Prem Kumar V, AI, Machine Learning, Full-Stack Developer, React, Node.js, Python, TensorFlow, PyTorch, MERN Stack, Portfolio">
-    <meta name="author" content="Prem Kumar V">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://premkumar-epic.github.io/premkumar/">
-    <meta property="og:title" content="Prem Kumar V - AI/ML Student & Full-Stack Developer">
-    <meta property="og:description"
-        content="Portfolio showcasing AI/ML projects, full-stack development work, and technical skills. Specializing in React, Node.js, Python, and Machine Learning.">
-    <meta property="og:image" content="https://premkumar-epic.github.io/premkumar/assets/profile.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://premkumar-epic.github.io/premkumar/">
-    <meta property="twitter:title" content="Prem Kumar V - AI/ML Student & Full-Stack Developer">
-    <meta property="twitter:description"
-        content="Portfolio showcasing AI/ML projects, full-stack development work, and technical skills.">
-    <meta property="twitter:image" content="https://premkumar-epic.github.io/premkumar/assets/profile.jpg">
-
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#3b82f6">
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Redirecting to premkumar.pro</title>
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6;
-            /* Light gray background */
-            color: #374151;
-            /* Dark gray text */
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 2rem;
-            /* Responsive padding */
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        @media (min-width: 768px) {
-
-            /* md breakpoint */
-            .container {
-                padding-left: 2rem;
-                padding-right: 2rem;
-            }
-        }
-
-        .section-title {
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #1f2937;
-            /* Darker gray for titles */
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            /* Underline width */
-            height: 4px;
-            background-color: #3b82f6;
-            /* Blue underline */
-            border-radius: 2px;
-        }
-
-        .project-card {
-            background-color: #ffffff;
-            border-radius: 0.75rem;
-            /* rounded-xl */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            /* shadow-md */
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid #e5e7eb;
-            /* border-gray-200 */
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             display: flex;
-            flex-direction: column;
-            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 20px;
         }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            /* shadow-lg */
-            transition: all 0.3s ease-in-out;
+        .container {
+            max-width: 500px;
         }
-
-        .social-link img {
-            transition: transform 0.2s ease-in-out;
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
-
-        .social-link:hover img {
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            background: rgba(255,255,255,0.3);
             transform: translateY(-2px);
         }
-
-        .quote {
-            font-style: italic;
-            color: #6b7280;
-            /* Gray text for quotes */
-            border-left: 4px solid #9ca3af;
-            /* Gray border for blockquote */
-            padding-left: 1rem;
-            margin-bottom: 1rem;
+        .spinner {
+            margin: 2rem auto;
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
         }
-
-        .skill-category {
-            margin-bottom: 1rem;
-        }
-
-        .skill-category h3 {
-            font-weight: 600;
-            color: #3b82f6;
-            /* Blue for skill categories */
-            margin-bottom: 0.5rem;
-        }
-
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
-
-        .skill-item {
-            background-color: #e0f2fe;
-            /* Light blue background for skills */
-            color: #0b2f53;
-            /* Darker blue text */
-            padding: 0.3rem 0.75rem;
-            border-radius: 0.375rem;
-            /* rounded-md */
-            font-size: 0.875rem;
-            /* text-sm */
-            font-weight: 500;
-        }
-
-        .experience-card {
-            background-color: #ffffff;
-            border-radius: 0.75rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border: 1px solid #e5e7eb;
-        }
-
-        .experience-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            transition: all 0.3s ease-in-out;
-        }
-
-        .experience-card ul {
-            list-style: disc;
-            margin-left: 1.25rem;
-            padding-left: 0.5rem;
-        }
-
-        .experience-card ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .technologies-used {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid #e5e7eb;
-            /* Light gray border */
-        }
-
-        .technologies-used h4 {
-            font-weight: 600;
-            color: #1f2937;
-            margin-bottom: 0.5rem;
+        @keyframes spin {
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
-
-<body class="antialiased">
-
-    <div class="container bg-white p-6 md:p-10 my-8 md:my-12 rounded-xl shadow-lg border border-gray-200">
-
-        <!-- Header Section -->
-        <header
-            class="mb-8 md:mb-12 flex flex-col md:flex-row-reverse items-center justify-center md:justify-between text-center md:text-left">
-            <!-- Profile Image -->
-            <img src="assets/profile.jpg" alt="Prem Kumar V Profile Picture"
-                class="rounded-full w-32 h-32 md:w-40 md:h-40 object-cover mb-4 md:mb-0 md:ml-8 border-4 border-blue-300 shadow-md flex-shrink-0">
-
-            <!-- Text Description -->
-            <div class="flex-grow">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">Prem Kumar. V</h1>
-                <p class="text-lg md:text-xl text-gray-600 mb-4 font-semibold">AI/ML Student & Full-Stack Developer |
-                    Transforming Ideas into Intelligent Solutions</p>
-                <p class="quote text-base md:text-lg">Life is about living and enjoying it.</p>
-            </div>
-            <hr class="my-6 border-gray-300 w-full md:hidden"> <!-- Horizontal rule for mobile only -->
-        </header>
-        <hr class="my-6 border-gray-300 hidden md:block"> <!-- Horizontal rule for desktop only -->
-
-        <!-- Education Section -->
-        <section class="mb-8 md:mb-12">
-            <h2 class="section-title text-2xl md:text-3xl mb-6">Education</h2>
-            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                <h3 class="text-xl font-semibold text-gray-800">Bachelor's Degree in Artificial Intelligence and Machine
-                    Learning</h3>
-                <p class="text-gray-700">SEA College of Engineering & Technology</p>
-                <p class="text-gray-600">Expected Graduation: 2026</p>
-            </div>
-        </section>
-
-        <!-- Work Experience Section -->
-        <section class="mb-8 md:mb-12">
-            <h2 class="section-title text-2xl md:text-3xl mb-6">Work Experience</h2>
-            <div class="experience-card">
-                <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-2">Assistant Manager <span
-                        class="text-base text-gray-600 font-normal">at Zetpeak</span></h3>
-                <p class="text-gray-700 mb-3">March 2023 – January 2025</p>
-                <p class="text-gray-700 font-medium mb-2">Key Responsibilities & Achievements:</p>
-                <ul class="text-gray-700">
-                    <li>Assigned jobs to interns and managed the AICTE internship program.</li>
-                    <li>Organized and conducted multiple awareness sessions.</li>
-                    <li>Collaborated with SEA Group of Institutions to enhance their profile through advertising and
-                        event organization (e.g., fests, functions).</li>
-                    <li>Managed all technical aspects for institutional functions and events.</li>
-                    <li>Oversaw and managed social media pages for various initiatives.</li>
-                    <li>Developed and managed websites for the organization and its partners.</li>
-                    <li>Initiated and implemented new events and programs.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Technical Skills Section -->
-        <section class="mb-8 md:mb-12">
-            <h2 class="section-title text-2xl md:text-3xl mb-6">Technical Skills</h2>
-            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">JavaScript (MERN Stack)</span>
-                        <span class="skill-item">C Programming</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">Python</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frontend Frameworks & Libraries</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">Bootstrap</span>
-                        <span class="skill-item">Tailwind CSS</span>
-                        <span class="skill-item">Shadcn/ui</span>
-                        <span class="skill-item">DaisyUI</span>
-                        <span class="skill-item">Motion</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend Frameworks & Libraries</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">Node.js</span>
-                        <span class="skill-item">Express.js (MERN Stack)</span>
-                        <span class="skill-item">Spring Boot</span>
-                        <span class="skill-item">Flask (from projects)</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">MongoDB</span>
-                        <span class="skill-item">Firebase</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud Platforms</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">AWS</span>
-                        <span class="skill-item">Azure</span>
-                        <span class="skill-item">Google Cloud</span>
-                        <span class="skill-item">Render</span>
-                        <span class="skill-item">Vercel</span>
-                        <span class="skill-item">Netlify</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Development Tools & Environments</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">VS Code</span>
-                        <span class="skill-item">Cursor</span>
-                        <span class="skill-item">Git</span>
-                        <span class="skill-item">Jupyter</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>AI/ML Libraries</h3>
-                    <div class="skill-list">
-                        <span class="skill-item">TensorFlow</span>
-                        <span class="skill-item">PyTorch</span>
-                        <span class="skill-item">Scikit-learn</span>
-                        <span class="skill-item">OpenCV</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="mb-8 md:mb-12">
-            <h2 class="section-title text-2xl md:text-3xl mb-6">Projects</h2>
-
-            <!-- Rec&Post Project -->
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
-                        <a href="https://github.com/premkumar-epic/Rec-Post" target="_blank" rel="noopener noreferrer"
-                            class="text-blue-600 hover:underline">Hackathon: Rec&Post</a>
-                    </h3>
-                    <p class="text-gray-600 mb-3 quote">Event: Code Carnage - 24hr Hackathon @ SJB Institute of
-                        Technology (SJBIT)</p>
-                    <p class="text-gray-700 mb-4">🌐 <strong class="font-medium">GitHub Repo:</strong> <a
-                            href="https://github.com/premkumar-epic/Rec-Post" target="_blank"
-                            class="text-blue-500 hover:underline">Rec&Post</a></p>
-                </div>
-            </div>
-
-            <!-- AI Patient Record Analyser Project -->
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
-                        <a href="https://github.com/premkumar-epic/ai-patient-record-analyser" target="_blank"
-                            rel="noopener noreferrer" class="text-blue-600 hover:underline">Hackathon: AI Patient Record
-                            Analyser</a>
-                    </h3>
-                    <p class="text-gray-600 mb-3 quote">Event: Internal Hackathon @ SEA College of Engineering and
-                        Technology (SEACET)</p>
-                    <p class="text-gray-700 mb-4">🌐 <strong class="font-medium">GitHub Repo:</strong> <a
-                            href="https://github.com/premkumar-epic/ai-patient-record-analyser" target="_blank"
-                            class="text-blue-500 hover:underline">ai-patient-record-analyser</a></p>
-                </div>
-            </div>
-
-            <!-- FocusPilot Project (In Progress) -->
-            <div class="project-card">
-                <div class="project-content">
-                    <h3 class="text-xl md:text-2xl font-semibold text-gray-800 mb-2">
-                        <span class="text-gray-800">FocusPilot – Your AI Productivity Co-Pilot <span
-                                class="text-sm text-gray-500">(In Progress)</span></span>
-                    </h3>
-                    <p class="text-gray-700 mb-4">📌 <strong class="font-medium">Features:</strong> AI task manager,
-                        Pomodoro focus tracker, habit builder, learning roadmap, and more.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications & Awards Section -->
-        <section class="mb-8 md:mb-12">
-            <h2 class="section-title text-2xl md:text-3xl mb-6">Certifications & Awards</h2>
-            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 text-gray-700">
-                <p>No professional certifications or academic awards at this time.</p>
-            </div>
-        </section>
-
-        <!-- About Me Section -->
-        <section class="mb-8 md:mb-12">
-            <h2 class="section-title text-2xl md:text-3xl mb-6">About Me</h2>
-            <ul class="list-disc list-inside space-y-2 text-gray-700">
-                <li>🎓 Studying <strong>Artificial Intelligence & Machine Learning</strong>.</li>
-                <li>🎨 Skilled in <strong>Design</strong> and have a keen eye for aesthetics and details.</li>
-                <li>📊 Experienced in <strong>Digital Marketing</strong>, understanding the market trends and customer
-                    needs.</li>
-                <li>💻 A rookie in the field of <strong>Development</strong>, but I'm very much interested and
-                    passionate about learning and exploring new things.</li>
-            </ul>
-        </section>
-
-        <!-- What I'm Focused On Section -->
-        <section class="mb-8 md:mb-12">
-            <h2 class="section-title text-2xl md:text-3xl mb-6">What I'm Focused On</h2>
-            <p class="text-gray-700">Exploring new technologies and developing software solutions and quick hacks.</p>
-        </section>
-
-        <!-- How to Reach Me Section -->
-        <section class="mb-8 md:mb-12">
-            <h2 class="section-title text-2xl md:text-3xl mb-6">How to Reach Me</h2>
-            <p class="text-gray-700 mb-4">Feel free to reach out if you want to collaborate on a project, need some
-                advice, or just want to chat.</p>
-            <div class="flex flex-wrap items-center">
-                <a href="https://www.linkedin.com/in/premkumar-25-8055p/" target="_blank" class="social-link">
-                    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"
-                        alt="LinkedIn">
-                </a>
-                <a href="https://twitter.com/PremKumar253" target="_blank" class="social-link">
-                    <img src="https://img.shields.io/badge/Twitter-black?style=for-the-badge&logo=twitter"
-                        alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com/prem.kumar.2.5/" target="_blank" class="social-link">
-                    <img src="https://img.shields.io/badge/Instagram-red?style=for-the-badge&logo=instagram"
-                        alt="Instagram">
-                </a>
-                <a href="mailto:premkumar.dev25@gmail.com" class="social-link">
-                    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"
-                        alt="Email">
-                </a>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="text-center text-gray-500 text-sm mt-8 md:mt-12">
-            <p>Thanks for stopping by!</p>
-        </footer>
-
+<body>
+    <div class="container">
+        <h1>🚀 Redirecting...</h1>
+        <div class="spinner"></div>
+        <p>Taking you to my new portfolio</p>
+        <a href="https://premkumar.pro">premkumar.pro</a>
     </div>
-
+    <script>
+        // Immediate redirect
+        window.location.href = "https://premkumar.pro";
+    </script>
 </body>
-
 </html>
