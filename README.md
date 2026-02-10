@@ -4,7 +4,7 @@
 
 ### AI/ML Engineer & Full-Stack Developer
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Building+Intelligent+Solutions;Full-Stack+%2B+AI%2FML+Developer;Final+Year+Student+%40+SRMIST;Intern+%40+SAP+Lab+India+%26+Netpy)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Building+Intelligent+Solutions;Full-Stack+%2B+AI%2FML+Developer;Final+Year+Student+%40+SEACET;Intern+%40+SAP+Lab+India+%26+Netpy)](https://git.io/typing-svg)
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-premkumar.pro-3b82f6?style=for-the-badge)](https://premkumar.pro)
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:premkumar.dev25@gmail.com)
@@ -21,7 +21,7 @@
 ```yaml
 name: Prem Kumar V
 role: AI/ML Engineer & Full-Stack Developer
-education: Final Year @ SRMIST (AI & ML)
+education: Final Year @ SEA College of Engineering & Technology (AI & ML)
 currently:
   - SAP Lab India (Software Engineering Intern)
   - Netpy (Full-Stack Development Intern)
