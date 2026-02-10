@@ -30,29 +30,14 @@
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=tokyonight&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=default&hide_border=true" />
-    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=default&hide_border=true" />
-  </picture>
-</p>
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=premkumar-epic&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=3b82f6&icon_color=3b82f6&text_color=c9d1d9&count_private=true" alt="GitHub Stats"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=premkumar-epic&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=3b82f6&text_color=c9d1d9&langs_count=8" alt="Top Languages"/>
+</div>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=premkumar-epic&theme=tokyonight&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com?user=premkumar-epic&theme=default&hide_border=true" />
-    <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com?user=premkumar-epic&theme=default&hide_border=true" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=premkumar-epic&layout=compact&theme=tokyonight&hide_border=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=premkumar-epic&layout=compact&theme=default&hide_border=true" />
-    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=premkumar-epic&layout=compact&theme=default&hide_border=true" />
-  </picture>
-</p>
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=premkumar-epic&theme=radical&hide_border=true&background=0D1117&ring=3b82f6&fire=3b82f6&currStreakLabel=3b82f6&sideLabels=c9d1d9&dates=c9d1d9" alt="GitHub Streak"/>
+</div>
 
 ---
 
