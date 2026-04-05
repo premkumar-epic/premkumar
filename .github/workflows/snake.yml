@@ -23,6 +23,12 @@ jobs:
           github_user_name: premkumar-epic
           outputs: dist/snake.svg
 
+      - name: Skip Vercel Deployment
+        run: |
+          mkdir -p dist/premkumar-portfolio
+          echo '{"ignoreBuildCommand": "exit 0"}' > dist/vercel.json
+          echo '{"ignoreBuildCommand": "exit 0"}' > dist/premkumar-portfolio/vercel.json
+
       - name: Push Snake Animation to Output Branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
