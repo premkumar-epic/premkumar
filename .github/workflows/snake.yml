@@ -25,6 +25,7 @@ jobs:
 
       - name: Skip Vercel Deployment
         run: |
+          sudo chown -R runner:docker dist
           mkdir -p dist/premkumar-portfolio
           echo '{"ignoreBuildCommand": "exit 0"}' > dist/vercel.json
           echo '{"ignoreBuildCommand": "exit 0"}' > dist/premkumar-portfolio/vercel.json
