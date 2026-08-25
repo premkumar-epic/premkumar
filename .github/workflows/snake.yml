@@ -27,8 +27,8 @@ jobs:
         run: |
           sudo chown -R runner:docker dist
           mkdir -p dist/premkumar-portfolio
-          echo '{"ignoreBuildCommand": "exit 0"}' > dist/vercel.json
-          echo '{"ignoreBuildCommand": "exit 0"}' > dist/premkumar-portfolio/vercel.json
+          echo '{"ignoreCommand": "exit 0"}' > dist/vercel.json
+          echo '{"ignoreCommand": "exit 0"}' > dist/premkumar-portfolio/vercel.json
 
       - name: Push Snake Animation to Output Branch
         uses: crazy-max/ghaction-github-pages@v3
