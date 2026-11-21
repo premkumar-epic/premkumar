@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
 Generate professional, ATS-optimized resume matching Prem Kumar V's background:
-Full Stack Web Developer | AI Engineer | Creator of BrowseMCP
-Includes AI systems, M2i-LMS, IVK Garments ERP, embedded hardware/bench repair,
-internships at NetPy & SAP Lab India, and VTU engineering graduation (First Class with Distinction).
+Tailored for Tier-1 Enterprise & California Tech referral applications:
+Cisco, Walmart Global Tech, Intuit, LinkedIn, Wells Fargo, Cambium Networks.
+Highlights: Software Engineering, Full Stack Web Architecture, AI & Agent Systems,
+Distributed Automation, Embedded Hardware/Diagnostics, and First Class with Distinction B.E.
 """
 
 import os
@@ -23,8 +24,8 @@ def generate_pdf(output_paths):
         pagesize=letter,
         leftMargin=margin,
         rightMargin=margin,
-        topMargin=28,
-        bottomMargin=28
+        topMargin=26,
+        bottomMargin=26
     )
 
     styles = getSampleStyleSheet()
@@ -71,7 +72,7 @@ def generate_pdf(output_paths):
         fontSize=10,
         leading=13,
         textColor=primary_color,
-        spaceBefore=6,
+        spaceBefore=5,
         spaceAfter=2
     )
 
@@ -121,10 +122,10 @@ def generate_pdf(output_paths):
     # 1. Header
     story.append(Paragraph("Prem Kumar V", name_style))
     story.append(Spacer(1, 2))
-    story.append(Paragraph("Full Stack Web Developer | AI Engineer | Creator of BrowseMCP", tagline_style))
+    story.append(Paragraph("Software Engineer | Full Stack &amp; AI Systems Developer | Creator of BrowseMCP", tagline_style))
     story.append(Spacer(1, 2))
     story.append(Paragraph("premkumar.dev25@gmail.com &nbsp;|&nbsp; +91 9986324074 &nbsp;|&nbsp; https://premkumar.pro &nbsp;|&nbsp; linkedin.com/in/premkumar-dev25 &nbsp;|&nbsp; github.com/premkumar-epic &nbsp;|&nbsp; Bangalore, India", contact_style))
-    story.append(Spacer(1, 4))
+    story.append(Spacer(1, 3))
 
     def add_section_header(title):
         story.append(Paragraph(title, section_heading))
@@ -133,24 +134,24 @@ def generate_pdf(output_paths):
     # 2. Professional Summary
     add_section_header("Professional Summary")
     story.append(Paragraph(
-        "AI/ML engineering graduate (First Class with Distinction, 73.91%) who architects practical software and hardware systems across Python, TypeScript, modern web stacks, and embedded microcontrollers. "
-        "Creator of <b>BrowseMCP</b>, an open-source MCP browser automation tool enabling AI agents to control browsers with token-efficient accessibility trees. "
-        "Experienced in developing enterprise full-stack platforms (Node.js, PostgreSQL, Prisma, React), local-first AI pipelines (faster-whisper, CTranslate2, BART, spaCy), and embedded firmware (RP2350, ESP32-CAM, LoRa). "
-        "Proven track record across software engineering internships at Netpy Technologies and SAP Lab India, combined with hands-on industrial electronics repair and operations. Seeking a Python / AI Developer role.",
+        "Results-driven Software Engineer and AI/ML engineering graduate (<b>First Class with Distinction, 73.91%</b>) with demonstrated experience building scalable web architectures, local AI infrastructure, and distributed automation systems. "
+        "Creator of <b>BrowseMCP</b>, an open-source Model Context Protocol server enabling AI agents to automate browser workflows with 90% token reduction via accessibility-tree parsing. "
+        "Skilled in architecting typed RESTful backends (Node.js, Express, PostgreSQL, Prisma), optimizing real-time AI pipelines (faster-whisper, CTranslate2, BART, spaCy), and programming embedded hardware firmware (C++, ESP32, LoRa, RP2350). "
+        "Proven engineering track record across software development internships at Netpy Technologies and SAP Lab India, complemented by industrial hardware diagnostics. Seeking a Software Engineer / Associate SDE role.",
         body_style
     ))
     story.append(Spacer(1, 2))
 
     # 3. Technical Skills
-    add_section_header("Skills")
+    add_section_header("Technical Skills")
     skills_data = [
-        [Paragraph("<b>Programming Languages:</b>", body_style), Paragraph("Python, TypeScript, JavaScript, C++, C, MicroPython, CircuitPython, Embedded C, SQL, Bash", body_style)],
-        [Paragraph("<b>AI &amp; Agent Systems:</b>", body_style), Paragraph("Model Context Protocol (MCP), RAG Pipelines, Gemini CLI, Claude Code, faster-whisper, CTranslate2, BART, spaCy, Ollama, PyTorch, OpenCV", body_style)],
-        [Paragraph("<b>Web &amp; Backend:</b>", body_style), Paragraph("Node.js, Express.js, Next.js, React, FastAPI, Flask, Django, PostgreSQL, Prisma ORM, Supabase, MongoDB, SQLite, Tailwind CSS", body_style)],
-        [Paragraph("<b>Hardware &amp; Embedded:</b>", body_style), Paragraph("Seeed XIAO RP2350, Raspberry Pi Pico/W, ESP32 / ESP32-CAM, LoRa (SX1278), 74HC165, MPR121, I2C/SPI, Industrial PCB Diagnostics", body_style)],
-        [Paragraph("<b>Infrastructure &amp; DevOps:</b>", body_style), Paragraph("Linux (Fedora, Debian), Proxmox VE, Docker, Systemd, SSH, Git/GitHub, Playwright, AWS (S3), Vercel, Jira, CI/CD", body_style)],
+        [Paragraph("<b>Core Languages:</b>", body_style), Paragraph("Python, TypeScript, JavaScript, C++, C, SQL, Bash, MicroPython", body_style)],
+        [Paragraph("<b>Backend &amp; Cloud:</b>", body_style), Paragraph("Node.js, Express.js, FastAPI, Flask, Django, PostgreSQL, Prisma ORM, Supabase, MongoDB, SQLite, AWS (S3), Docker, Linux", body_style)],
+        [Paragraph("<b>Frontend &amp; Web:</b>", body_style), Paragraph("React, Next.js, TypeScript, Tailwind CSS, HTML5/CSS3, State Management, Client-Side Cryptography", body_style)],
+        [Paragraph("<b>AI &amp; Agent Systems:</b>", body_style), Paragraph("Model Context Protocol (MCP), LLM Tooling, RAG Pipelines, faster-whisper, CTranslate2, BART, spaCy, PyTorch, OpenCV", body_style)],
+        [Paragraph("<b>Systems &amp; Automation:</b>", body_style), Paragraph("Playwright Automation, Git/GitHub, CI/CD, Proxmox VE, I2C/SPI Protocols, Seeed RP2350, ESP32, LoRa (SX1278)", body_style)],
     ]
-    t_sk = Table(skills_data, colWidths=[130, 418])
+    t_sk = Table(skills_data, colWidths=[120, 428])
     t_sk.setStyle(TableStyle([
         ('VALIGN', (0,0), (-1,-1), 'TOP'),
         ('BOTTOMPADDING', (0,0), (-1,-1), 1),
@@ -161,11 +162,11 @@ def generate_pdf(output_paths):
     story.append(t_sk)
     story.append(Spacer(1, 2))
 
-    # 4. Featured Projects
-    add_section_header("Projects")
+    # 4. Featured Engineering Projects
+    add_section_header("Featured Engineering Projects")
 
     def add_pdf_project(title_html, date_text, bullets):
-        t = Table([[Paragraph(title_html, item_title_style), Paragraph(date_text, item_date_style)]], colWidths=[380, 168])
+        t = Table([[Paragraph(title_html, item_title_style), Paragraph(date_text, item_date_style)]], colWidths=[385, 163])
         t.setStyle(TableStyle([
             ('VALIGN', (0,0), (-1,-1), 'TOP'),
             ('LEFTPADDING', (0,0), (-1,-1), 0),
@@ -179,73 +180,63 @@ def generate_pdf(output_paths):
 
     # BrowseMCP
     add_pdf_project(
-        "<b>BrowseMCP</b> (Open Source) — <i>Python, TypeScript, Playwright, MCP, Gemini CLI</i>",
+        "<b>BrowseMCP</b> (Open-Source AI Agent Automation Protocol) — <i>Python, TypeScript, Playwright, MCP</i>",
         "github.com/premkumar-epic/browsermcp",
         [
-            "Built an open-source Gemini CLI extension and MCP server providing AI agents token-efficient browser automation via Playwright.",
-            "Designed an accessibility-tree DOM snapshotting mechanism (~80 tokens/action step) reducing token overhead by ~90% vs screenshots.",
-            "Shipped 27 MCP tools (click, type, navigate, screenshot, inspect), session state persistence, and automated user action flow recording."
+            "Architected an open-source Model Context Protocol (MCP) server providing autonomous AI agents reliable browser execution via Playwright.",
+            "Engineered an accessibility-tree DOM snapshot parser (~80 tokens/step), reducing agent prompt token consumption by up to 90% vs vision models.",
+            "Shipped 27 production-ready MCP tools (click, type, navigate, screenshot, inspect), session persistence, and automated action recording."
         ]
     )
 
     # AI Meeting Assistant
     add_pdf_project(
-        "<b>AI-Powered Meeting Assistant</b> — <i>faster-whisper, CTranslate2, BART, spaCy, FastAPI, React</i>",
+        "<b>AI-Powered Meeting Assistant</b> (Local-First NLP Engine) — <i>faster-whisper, BART, spaCy, FastAPI, React</i>",
         "github.com/premkumar-epic/AI-Powered-Meeting_Assistant",
         [
-            "Engineered privacy-first meeting intelligence system executing 100% on CPU without third-party API dependencies or audio data leakage.",
-            "Integrated faster-whisper (CTranslate2, 4x–8x inference speedup), recursive hierarchical BART text summarization, and spaCy NER task extraction.",
-            "FastAPI backend, React dashboard, automated integration test suite with 90% coverage, and complete IEEE project documentation."
+            "Developed enterprise-grade, privacy-first meeting intelligence engine running 100% locally on CPU without external API dependencies or data leakage.",
+            "Integrated faster-whisper with CTranslate2 quantization (achieving 4x–8x inference acceleration on CPU), hierarchical BART summarization, and spaCy NER.",
+            "Built asynchronous FastAPI endpoints, React dashboard, automated integration test suite with 90% code coverage, and published IEEE report."
         ]
     )
 
     # M2i-LMS
     add_pdf_project(
-        "<b>M2i-LMS</b> (Internship Flagship Project) — <i>Node.js, Express, TypeScript, PostgreSQL, Prisma</i>",
+        "<b>M2i-LMS</b> (Enterprise Learning Platform) — <i>Node.js, Express, TypeScript, PostgreSQL, Prisma ORM</i>",
         "Enterprise Learning Platform",
         [
-            "Designed core architectural components for NetPy's Smart LMS, featuring automated AI quiz generation from video curriculum content.",
-            "Modeled relational PostgreSQL schemas with Prisma ORM, implemented typed REST endpoints, and authored 22 architectural documentation modules."
+            "Engineered core backend architectural modules for NetPy's Smart LMS, serving institutional cohorts with automated AI quiz synthesis.",
+            "Modeled normalized relational schemas with PostgreSQL &amp; Prisma ORM, implemented typed REST APIs, and authored 22 system architecture specifications."
         ]
     )
 
     # IVK Garments ERP
     add_pdf_project(
-        "<b>IVK Garments ERP &amp; Batch Ledger</b> — <i>Node.js, Supabase/PostgreSQL, React, PDF, GST</i>",
+        "<b>IVK Garments ERP &amp; Financial Ledger Engine</b> — <i>Node.js, Supabase/PostgreSQL, React, PDF Generation</i>",
         "Production Garment ERP",
         [
-            "Developed end-to-end production ERP system for garment manufacturing: automated GST-compliant PDF invoicing, batch cost analytics, and dispatch tracking.",
-            "Built automated ledger reconciliation matching factory production runs against export dispatches with Row Level Security (RLS) on PostgreSQL."
+            "Developed end-to-end production ERP system for garment manufacturing: automated GST-compliant PDF invoicing, batch costing, and dispatch tracking.",
+            "Implemented Row Level Security (RLS) on PostgreSQL and engineered transaction audit logging matching factory production batches against export dispatches."
         ]
     )
 
-    # Custom 12-Key Macropad & Hardware Lab
+    # Greenhouse LoRa IoT & RetroCam
     add_pdf_project(
-        "<b>Custom 12-Key Macropad &amp; Hardware Lab</b> — <i>Seeed RP2350, CircuitPython, OLED, 74HC165, MPR121</i>",
-        "Embedded Hardware",
+        "<b>Greenhouse LoRa IoT &amp; RetroCam</b> (Distributed Embedded Systems) — <i>C++, ESP32, LoRa (SX1278), Pico W</i>",
+        "Distributed IoT &amp; Hardware",
         [
-            "Built a 12-key programmable mechanical macropad with rotary encoders, OLED status display, 74HC165 shift register matrix, and MPR121 touch sensing.",
-            "Fabricated benchtop lab equipment: variable power supply (ATX + ZK-5KX buck-boost + SW3518S charger) and smart T12/C245 PID soldering station."
+            "Greenhouse IoT: Designed dual-layer telemetry network linking field sensors (ESP32 deep sleep) via 433MHz LoRa to an autonomous Pico W relay controller.",
+            "RetroCam: Programmed modular C++ firmware for ESP32-CAM with live viewfinder, SPI SD photo capture, and single-pin 4-button resistor ladder ADC."
         ]
     )
 
-    # RetroCam & LoRa IoT
+    # Hermes Knowledge Pipeline
     add_pdf_project(
-        "<b>RetroCam &amp; Greenhouse LoRa IoT</b> — <i>C++, ESP32-CAM, LoRa (SX1278), Raspberry Pi Pico W</i>",
-        "IoT & Embedded Systems",
+        "<b>Hermes Knowledge Pipeline &amp; Homelab</b> — <i>Python, SQLite, Obsidian, Proxmox VE, Ollama</i>",
+        "AI Archiver &amp; Homelab",
         [
-            "RetroCam: C++ firmware for ESP32-CAM featuring live viewfinder, SD photo capture, on-device gallery, and single-pin 4-button resistor ladder.",
-            "Greenhouse LoRa IoT: Dual-layer agricultural IoT network linking outdoor ESP32 sensors via 433MHz LoRa to an autonomous Pico W relay controller."
-        ]
-    )
-
-    # Hermes Pipeline
-    add_pdf_project(
-        "<b>Hermes Pipeline &amp; Homelab</b> — <i>Python, SQLite, Obsidian, Proxmox VE, Ollama</i>",
-        "AI Archiver & Homelab",
-        [
-            "Built privacy-centric AI conversation archiver ingesting and deduplicating multi-model chats (Gemini, Claude, ChatGPT) into local SQLite + Obsidian.",
-            "Configured Proxmox VE homelab server with systemd automation, local Ollama LLM inference endpoints, and automated SSL certificate management."
+            "Built privacy-centric AI conversation archiver ingesting, deduplicating, and vector-indexing multi-model chats into SQLite and Obsidian knowledge base.",
+            "Configured Proxmox VE virtualization server running automated systemd services, local Ollama LLM inference endpoints, and automated SSL lifecycle."
         ]
     )
 
@@ -270,20 +261,20 @@ def generate_pdf(output_paths):
         "<b>Electronics Repair Technician &amp; Garment Operations</b> · <i>IVK Garments &amp; Industrial Operations</i>",
         "Bangalore, India · Sep 2026 – Present",
         [
-            "Diagnose, repair, and test industrial sewing machine electronic control boxes, servo motor drives, and variable-frequency inverter PCBs alongside senior mentor.",
-            "Conduct board-level fault isolation using MAS830L multimeter, oscilloscope, and regulated soldering stations, replacing faulty MOSFETs, optocouplers, and power rails.",
-            "Oversee factory batch production costing, dispatch tracking, and financial ledger reconciliation between IVK Garments and Afro Asia Exports."
+            "Perform component-level troubleshooting, repair, and bench testing of industrial sewing machine electronic control units, servo drives, and inverter PCBs.",
+            "Conduct board-level fault isolation using multimeters, oscilloscopes, and regulated soldering stations, replacing power MOSFETs, optocouplers, and power rails.",
+            "Oversee factory batch costing, shipment dispatch tracking, and financial ledger reconciliation between IVK Garments and Afro Asia Exports."
         ]
     )
 
     # NetPy Technologies
     add_pdf_exp(
-        "<b>Technical Intern</b> · <i>NetPy Technologies</i>",
+        "<b>Technical Intern (Software Engineering)</b> · <i>NetPy Technologies</i>",
         "Bangalore, India · Oct 2025 – Jun 2026",
         [
-            "Built core software components for <b>M2i LMS</b> (Smart Learning Management System), integrating automated AI quiz generation from video curriculum content.",
-            "Designed relational PostgreSQL schemas with Prisma ORM, implemented typed REST endpoints in Express/TypeScript, and authored 22 architectural documentation modules.",
-            "Managed technical system administration, Git workflows, and sprint deliverables using Jira in an agile startup environment."
+            "Built core software modules for <b>M2i LMS</b>, implementing automated video-to-quiz generation pipelines and structured student performance tracking.",
+            "Designed relational database schemas in PostgreSQL with Prisma ORM, implemented typed RESTful APIs in Express/TypeScript, and authored 22 architectural modules.",
+            "Managed technical system administration, Git branching workflows, and agile sprint deliverables using Jira."
         ]
     )
 
@@ -292,9 +283,9 @@ def generate_pdf(output_paths):
         "<b>Technical Intern</b> · <i>SAP Lab India (via Edunet Foundation)</i>",
         "Bangalore, India · Sep 2025 – Jun 2026",
         [
-            "Underwent advanced technical training in AI/ML, Cloud Computing, and Computer Vision through SAP India's flagship CSR Code Unnati program.",
-            "Worked with SAP Business One (B1P) and ABAP platforms to support enterprise business workflows and data analytics.",
-            "Engaged in institutional development programs and international certifications in SAP ABAP and Enterprise Analytics."
+            "Completed intensive technical training in AI/ML, Cloud Computing, and Computer Vision through SAP India's flagship CSR Code Unnati program.",
+            "Worked with SAP Business One (B1P) and ABAP platforms to support enterprise business workflows and analytical dashboards.",
+            "Engaged in institutional development programs and earned international certification credentials in SAP ABAP and Enterprise Analytics."
         ]
     )
 
@@ -303,9 +294,9 @@ def generate_pdf(output_paths):
         "<b>Assistant Manager</b> · <i>Zetpeak</i>",
         "Bangalore, India · Mar 2023 – Jan 2025",
         [
-            "Managed AICTE internship cohorts: assigned student deliverables, tracked milestones, and ensured timely technical project completions.",
-            "Directed a team of 5 developers building institutional web portals and applications using React, Node.js, and WordPress.",
-            "Managed technical audiovisual infrastructure and portal operations for large-scale institutional conferences and regional fest events."
+            "Managed AICTE internship cohorts: structured technical deliverables, tracked student milestones, and ensured timely technical project completions.",
+            "Directed a cross-functional team of 5 developers building institutional web portals and applications using React, Node.js, and WordPress.",
+            "Oversaw technical audiovisual infrastructure, streaming pipelines, and web portals for large-scale institutional conferences and regional fest events."
         ]
     )
 
@@ -334,7 +325,7 @@ def generate_pdf(output_paths):
     story.append(Paragraph("• <b>First Class with Distinction (FCD):</b> Graduated with 73.91% under VTU 2022 scheme, clearing all 161 credits.", bullet_style))
     story.append(Paragraph("• <b>Capstone &amp; Internship Excellence:</b> Perfect 10.0 grade points in Major Project (196/200) and Industry Internship (188/200).", bullet_style))
     story.append(Paragraph("• <b>Assistant Head of Cyber Security &amp; Coding Club:</b> Spearheaded campus coding hackathons, technical workshops, and developer meetups.", bullet_style))
-    story.append(Paragraph("• <b>Organizer · SEA Carnival College Fest:</b> Led the technical and audiovisual infrastructure management for the annual college fest.", bullet_style))
+    story.append(Paragraph("• <b>Organizer · SEA Carnival College Fest:</b> Led technical and audiovisual infrastructure management for the annual college fest.", bullet_style))
 
     doc.build(story)
 
@@ -364,7 +355,7 @@ def generate_docx(output_paths):
     r_name.font.bold = True
     r_name.font.color.rgb = dark_hex
 
-    r_tag = p_title.add_run("Full Stack Web Developer | AI Engineer | Creator of BrowseMCP\n")
+    r_tag = p_title.add_run("Software Engineer | Full Stack & AI Systems Developer | Creator of BrowseMCP\n")
     r_tag.font.name = "Arial"
     r_tag.font.size = Pt(9.5)
     r_tag.font.bold = True
@@ -399,22 +390,22 @@ def generate_docx(output_paths):
     p_sum.paragraph_format.space_before = Pt(1)
     p_sum.paragraph_format.space_after = Pt(2)
     r_sum = p_sum.add_run(
-        "AI/ML engineering graduate (First Class with Distinction, 73.91%) who architects practical software and hardware systems across Python, TypeScript, modern web stacks, and embedded microcontrollers. "
-        "Creator of BrowseMCP, an open-source MCP browser automation tool enabling AI agents to control browsers with token-efficient accessibility trees. "
-        "Experienced in developing enterprise full-stack platforms (Node.js, PostgreSQL, Prisma, React), local-first AI pipelines (faster-whisper, CTranslate2, BART, spaCy), and embedded firmware (RP2350, ESP32-CAM, LoRa). "
-        "Proven track record across software engineering internships at Netpy Technologies and SAP Lab India, combined with hands-on industrial electronics repair and operations. Seeking a Python / AI Developer role."
+        "Results-driven Software Engineer and AI/ML engineering graduate (First Class with Distinction, 73.91%) with demonstrated experience building scalable web architectures, local AI infrastructure, and distributed automation systems. "
+        "Creator of BrowseMCP, an open-source Model Context Protocol server enabling AI agents to automate browser workflows with 90% token reduction via accessibility-tree parsing. "
+        "Skilled in architecting typed RESTful backends (Node.js, Express, PostgreSQL, Prisma), optimizing real-time AI pipelines (faster-whisper, CTranslate2, BART, spaCy), and programming embedded hardware firmware (C++, ESP32, LoRa, RP2350). "
+        "Proven engineering track record across software development internships at Netpy Technologies and SAP Lab India, complemented by industrial hardware diagnostics. Seeking a Software Engineer / Associate SDE role."
     )
     r_sum.font.name = "Arial"
     r_sum.font.size = Pt(9)
 
-    # Skills
-    add_docx_heading("Skills")
+    # Technical Skills
+    add_docx_heading("Technical Skills")
     skills = [
-        ("Programming Languages:", "Python, TypeScript, JavaScript, C++, C, MicroPython, CircuitPython, Embedded C, SQL, Bash"),
-        ("AI & Agent Systems:", "Model Context Protocol (MCP), RAG Pipelines, Gemini CLI, Claude Code, faster-whisper, CTranslate2, BART, spaCy, Ollama, PyTorch, OpenCV"),
-        ("Web & Backend:", "Node.js, Express.js, Next.js, React, FastAPI, Flask, Django, PostgreSQL, Prisma ORM, Supabase, MongoDB, SQLite, Tailwind CSS"),
-        ("Hardware & Embedded:", "Seeed XIAO RP2350, Raspberry Pi Pico/W, ESP32 / ESP32-CAM, LoRa (SX1278), 74HC165, MPR121, I2C/SPI, Industrial PCB Diagnostics"),
-        ("Infrastructure & DevOps:", "Linux (Fedora, Debian), Proxmox VE, Docker, Systemd, SSH, Git/GitHub, Playwright, AWS (S3), Vercel, Jira, CI/CD")
+        ("Core Languages:", "Python, TypeScript, JavaScript, C++, C, SQL, Bash, MicroPython"),
+        ("Backend & Cloud:", "Node.js, Express.js, FastAPI, Flask, Django, PostgreSQL, Prisma ORM, Supabase, MongoDB, SQLite, AWS (S3), Docker, Linux"),
+        ("Frontend & Web:", "React, Next.js, TypeScript, Tailwind CSS, HTML5/CSS3, State Management, Client-Side Cryptography"),
+        ("AI & Agent Systems:", "Model Context Protocol (MCP), LLM Tooling, RAG Pipelines, faster-whisper, CTranslate2, BART, spaCy, PyTorch, OpenCV"),
+        ("Systems & Automation:", "Playwright Automation, Git/GitHub, CI/CD, Proxmox VE, I2C/SPI Protocols, Seeed RP2350, ESP32, LoRa (SX1278)")
     ]
     for category, items in skills:
         p_sk = doc.add_paragraph()
@@ -429,7 +420,7 @@ def generate_docx(output_paths):
         rit.font.size = Pt(9)
 
     # Projects
-    add_docx_heading("Projects")
+    add_docx_heading("Featured Engineering Projects")
 
     def add_proj(name, stack, bullets):
         p = doc.add_paragraph()
@@ -448,67 +439,58 @@ def generate_docx(output_paths):
             add_bullet(b)
 
     add_proj(
-        "BrowseMCP (Open Source)",
-        "Python, TypeScript, Playwright, MCP, Gemini CLI (github.com/premkumar-epic/browsermcp)",
+        "BrowseMCP (Open-Source AI Agent Automation Protocol)",
+        "Python, TypeScript, Playwright, MCP (github.com/premkumar-epic/browsermcp)",
         [
-            "Built an open-source Gemini CLI extension and MCP server providing AI agents token-efficient browser automation via Playwright.",
-            "Designed an accessibility-tree DOM snapshotting mechanism (~80 tokens/action step) reducing token overhead by ~90% vs screenshots.",
-            "Shipped 27 MCP tools (click, type, navigate, screenshot, inspect), session state persistence, and automated user action flow recording."
+            "Architected an open-source Model Context Protocol (MCP) server providing autonomous AI agents reliable browser execution via Playwright.",
+            "Engineered an accessibility-tree DOM snapshot parser (~80 tokens/step), reducing agent prompt token consumption by up to 90% vs vision models.",
+            "Shipped 27 production-ready MCP tools (click, type, navigate, screenshot, inspect), session persistence, and automated action recording."
         ]
     )
 
     add_proj(
-        "AI-Powered Meeting Assistant",
-        "faster-whisper, CTranslate2, BART, spaCy, FastAPI, React (github.com/premkumar-epic/AI-Powered-Meeting_Assistant)",
+        "AI-Powered Meeting Assistant (Local-First NLP Engine)",
+        "faster-whisper, BART, spaCy, FastAPI, React (github.com/premkumar-epic/AI-Powered-Meeting_Assistant)",
         [
-            "Engineered privacy-first meeting intelligence system executing 100% on CPU without third-party API dependencies or audio data leakage.",
-            "Integrated faster-whisper (CTranslate2, 4x–8x inference speedup), recursive hierarchical BART text summarization, and spaCy NER task extraction.",
-            "FastAPI backend, React dashboard, automated integration test suite with 90% coverage, and complete IEEE project documentation."
+            "Developed enterprise-grade, privacy-first meeting intelligence engine running 100% locally on CPU without external API dependencies or data leakage.",
+            "Integrated faster-whisper with CTranslate2 quantization (achieving 4x–8x inference acceleration on CPU), hierarchical BART summarization, and spaCy NER.",
+            "Built asynchronous FastAPI endpoints, React dashboard, automated integration test suite with 90% code coverage, and published IEEE report."
         ]
     )
 
     add_proj(
-        "M2i-LMS (Internship Flagship Project)",
-        "Node.js, Express, TypeScript, PostgreSQL, Prisma",
+        "M2i-LMS (Enterprise Learning Platform)",
+        "Node.js, Express, TypeScript, PostgreSQL, Prisma ORM",
         [
-            "Designed core architectural components for NetPy's Smart LMS, featuring automated AI quiz generation from video curriculum content.",
-            "Modeled relational PostgreSQL schemas with Prisma ORM, implemented typed REST endpoints, and authored 22 architectural documentation modules."
+            "Engineered core backend architectural modules for NetPy's Smart LMS, serving institutional cohorts with automated AI quiz synthesis.",
+            "Modeled normalized relational schemas with PostgreSQL & Prisma ORM, implemented typed REST APIs, and authored 22 system architecture specifications."
         ]
     )
 
     add_proj(
-        "IVK Garments ERP & Batch Ledger",
-        "Node.js, Supabase/PostgreSQL, React, PDF Generation, GST",
+        "IVK Garments ERP & Financial Ledger Engine",
+        "Node.js, Supabase/PostgreSQL, React, PDF Generation",
         [
-            "Developed end-to-end production ERP system for garment manufacturing: automated GST-compliant PDF invoicing, batch cost analytics, and dispatch tracking.",
-            "Built automated ledger reconciliation matching factory production runs against export dispatches with Row Level Security (RLS) on PostgreSQL."
+            "Developed end-to-end production ERP system for garment manufacturing: automated GST-compliant PDF invoicing, batch costing, and dispatch tracking.",
+            "Implemented Row Level Security (RLS) on PostgreSQL and engineered transaction audit logging matching factory production batches against export dispatches."
         ]
     )
 
     add_proj(
-        "Custom 12-Key Macropad & Hardware Lab",
-        "Seeed RP2350, CircuitPython, OLED, 74HC165, MPR121",
+        "Greenhouse LoRa IoT & RetroCam (Distributed Embedded Systems)",
+        "C++, ESP32, LoRa (SX1278), Pico W",
         [
-            "Built a 12-key programmable mechanical macropad with rotary encoders, OLED status display, 74HC165 shift register matrix, and MPR121 touch sensing.",
-            "Fabricated benchtop lab equipment: variable power supply (ATX + ZK-5KX buck-boost + SW3518S charger) and smart T12/C245 PID soldering station."
+            "Greenhouse IoT: Designed dual-layer telemetry network linking field sensors (ESP32 deep sleep) via 433MHz LoRa to an autonomous Pico W relay controller.",
+            "RetroCam: Programmed modular C++ firmware for ESP32-CAM with live viewfinder, SPI SD photo capture, and single-pin 4-button resistor ladder ADC."
         ]
     )
 
     add_proj(
-        "RetroCam & Greenhouse LoRa IoT",
-        "C++, ESP32-CAM, LoRa (SX1278), Raspberry Pi Pico W",
-        [
-            "RetroCam: C++ firmware for ESP32-CAM featuring live viewfinder, SD photo capture, on-device gallery, and single-pin 4-button resistor ladder.",
-            "Greenhouse LoRa IoT: Dual-layer agricultural IoT network linking outdoor ESP32 sensors via 433MHz LoRa to an autonomous Pico W relay controller."
-        ]
-    )
-
-    add_proj(
-        "Hermes Pipeline & Homelab",
+        "Hermes Knowledge Pipeline & Homelab",
         "Python, SQLite, Obsidian, Proxmox VE, Ollama",
         [
-            "Built privacy-centric AI conversation archiver ingesting and deduplicating multi-model chats (Gemini, Claude, ChatGPT) into local SQLite + Obsidian.",
-            "Configured Proxmox VE homelab server with systemd automation, local Ollama LLM inference endpoints, and automated SSL certificate management."
+            "Built privacy-centric AI conversation archiver ingesting, deduplicating, and vector-indexing multi-model chats into SQLite and Obsidian knowledge base.",
+            "Configured Proxmox VE virtualization server running automated systemd services, local Ollama LLM inference endpoints, and automated SSL lifecycle."
         ]
     )
 
@@ -534,19 +516,19 @@ def generate_docx(output_paths):
         "Electronics Repair Technician & Garment Operations · IVK Garments & Industrial Operations",
         "Bangalore, India · Sep 2026 – Present",
         [
-            "Diagnose, repair, and test industrial sewing machine electronic control boxes, servo motor drives, and variable-frequency inverter PCBs alongside senior mentor.",
-            "Conduct board-level fault isolation using MAS830L multimeter, oscilloscope, and regulated soldering stations, replacing faulty MOSFETs, optocouplers, and power rails.",
-            "Oversee factory batch production costing, dispatch tracking, and financial ledger reconciliation between IVK Garments and Afro Asia Exports."
+            "Perform component-level troubleshooting, repair, and bench testing of industrial sewing machine electronic control units, servo drives, and inverter PCBs.",
+            "Conduct board-level fault isolation using multimeters, oscilloscopes, and regulated soldering stations, replacing power MOSFETs, optocouplers, and power rails.",
+            "Oversee factory batch costing, shipment dispatch tracking, and financial ledger reconciliation between IVK Garments and Afro Asia Exports."
         ]
     )
 
     add_exp(
-        "Technical Intern · NetPy Technologies",
+        "Technical Intern (Software Engineering) · NetPy Technologies",
         "Bangalore, India · Oct 2025 – Jun 2026",
         [
-            "Built core software components for M2i LMS (Smart Learning Management System), integrating automated AI quiz generation from video curriculum content.",
-            "Designed relational PostgreSQL schemas with Prisma ORM, implemented typed REST endpoints in Express/TypeScript, and authored 22 architectural documentation modules.",
-            "Managed technical system administration, Git workflows, and sprint deliverables using Jira in an agile startup environment."
+            "Built core software modules for M2i LMS, implementing automated video-to-quiz generation pipelines and structured student performance tracking.",
+            "Designed relational database schemas in PostgreSQL with Prisma ORM, implemented typed RESTful APIs in Express/TypeScript, and authored 22 architectural modules.",
+            "Managed technical system administration, Git branching workflows, and agile sprint deliverables using Jira."
         ]
     )
 
@@ -554,9 +536,9 @@ def generate_docx(output_paths):
         "Technical Intern · SAP Lab India (via Edunet Foundation)",
         "Bangalore, India · Sep 2025 – Jun 2026",
         [
-            "Underwent advanced technical training in AI/ML, Cloud Computing, and Computer Vision through SAP India's flagship CSR Code Unnati program.",
-            "Worked with SAP Business One (B1P) and ABAP platforms to support enterprise business workflows and data analytics.",
-            "Engaged in institutional development programs and international certifications in SAP ABAP and Enterprise Analytics."
+            "Completed intensive technical training in AI/ML, Cloud Computing, and Computer Vision through SAP India's flagship CSR Code Unnati program.",
+            "Worked with SAP Business One (B1P) and ABAP platforms to support enterprise business workflows and analytical dashboards.",
+            "Engaged in institutional development programs and earned international certification credentials in SAP ABAP and Enterprise Analytics."
         ]
     )
 
@@ -564,9 +546,9 @@ def generate_docx(output_paths):
         "Assistant Manager · Zetpeak",
         "Bangalore, India · Mar 2023 – Jan 2025",
         [
-            "Managed AICTE internship cohorts: assigned student deliverables, tracked milestones, and ensured timely technical project completions.",
-            "Directed a team of 5 developers building institutional web portals and applications using React, Node.js, and WordPress.",
-            "Managed technical audiovisual infrastructure and portal operations for large-scale institutional conferences and regional fest events."
+            "Managed AICTE internship cohorts: structured technical deliverables, tracked student milestones, and ensured timely technical project completions.",
+            "Directed a cross-functional team of 5 developers building institutional web portals and applications using React, Node.js, and WordPress.",
+            "Oversaw technical audiovisual infrastructure, streaming pipelines, and web portals for large-scale institutional conferences and regional fest events."
         ]
     )
 
@@ -595,7 +577,7 @@ def generate_docx(output_paths):
     add_bullet("First Class with Distinction (FCD): Graduated with 73.91% under VTU 2022 scheme, clearing all 161 credits.")
     add_bullet("Capstone & Internship Excellence: Perfect 10.0 grade points in Major Project (196/200) and Industry Internship (188/200).")
     add_bullet("Assistant Head of Cyber Security & Coding Club: Spearheaded campus coding hackathons, technical workshops, and developer meetups.")
-    add_bullet("Organizer · SEA Carnival College Fest: Led the technical and audiovisual infrastructure management for the annual college fest.")
+    add_bullet("Organizer · SEA Carnival College Fest: Led technical and audiovisual infrastructure management for the annual college fest.")
 
     doc.save(output_paths[0])
     for p in output_paths[1:]:
@@ -606,11 +588,13 @@ if __name__ == "__main__":
     pdf_targets = [
         "/home/premkumar/PROJECTS/premkumar/premkumar-portfolio/public/resume.pdf",
         "/home/premkumar/PROJECTS/premkumar/resume.pdf",
-        "/home/premkumar/Downloads/PremKumar_Resume.pdf"
+        "/home/premkumar/Downloads/PremKumar_Resume.pdf",
+        "/home/premkumar/.gemini/antigravity-cli/brain/d0e2c4fb-3f5b-43f1-9bce-1663baf2ba8b/PremKumar_Resume.pdf"
     ]
     docx_targets = [
         "/home/premkumar/PROJECTS/premkumar/premkumar-portfolio/public/resume.docx",
-        "/home/premkumar/PROJECTS/premkumar/resume.docx"
+        "/home/premkumar/PROJECTS/premkumar/resume.docx",
+        "/home/premkumar/.gemini/antigravity-cli/brain/d0e2c4fb-3f5b-43f1-9bce-1663baf2ba8b/PremKumar_Resume.docx"
     ]
     generate_pdf(pdf_targets)
     print("PDF generated successfully at:", pdf_targets)
