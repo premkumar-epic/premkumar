@@ -1,21 +1,26 @@
 export const personalInfo = {
-    name: "Prem Kumar. V",
-    title: "AI/ML Engineering Student & Full Stack Developer",
-    tagline: "Crafting Intelligent Solutions at the Intersection of AI and Web Development",
+    name: "Prem Kumar V",
+    title: "AI/ML Engineering Graduate & Full-Stack / AI Developer",
+    tagline: "Building Practical Tools in Python, TypeScript, AI Agents & Embedded Systems",
     location: "Bangalore, India",
     email: "premkumar.dev25@gmail.com",
     phone: "+91 9986324074",
-    graduation: "June 2026",
+    graduation: "July 2026",
+    college: "SEA College of Engineering & Technology (VTU)",
+    degree: "B.E. in Artificial Intelligence & Machine Learning",
+    classification: "First Class with Distinction (73.91%)",
+    cgpa: "7.39 / 10.00",
 
-    bio: "Final-year AI/ML student with a passion for building scalable, intelligent applications. Currently interning at SAP Lab India and Netpy, where I merge cutting-edge AI technologies with modern full-stack development. I transform complex problems into elegant solutions using the MERN stack, Python, and cloud infrastructure.",
+    bio: "AI/ML engineering graduate (First Class with Distinction, 73.91%) who architects practical software and hardware systems across Python, TypeScript, modern web stacks, and embedded microcontrollers. Creator of BrowseMCP, an open-source MCP browser automation tool enabling AI agents to control browsers with token-efficient accessibility trees. Experienced in developing enterprise full-stack platforms (Node.js, PostgreSQL, Prisma, React), local-first AI pipelines (faster-whisper, CTranslate2, BART, spaCy), and embedded firmware (RP2350, ESP32-CAM, LoRa). Proven track record across software engineering internships at Netpy Technologies and SAP Lab India, combined with hands-on industrial electronics repair and operations. Seeking a Python / AI Developer role.",
 
     taglines: [
-        "From concept to deployment, I build experiences that matter.",
-        "Code meets intelligence. Innovation meets execution.",
-        "Turning ideas into intelligent, scalable realities."
+        "Creator of BrowseMCP — Open-Source AI Agent Browser Automation",
+        "Full-Stack Web Architect (TypeScript, Node.js, React, PostgreSQL)",
+        "Hardware Tinkerer — Industrial Electronics, RP2350, ESP32 & LoRa IoT",
+        "First Class with Distinction graduate in AI & Machine Learning"
     ],
 
-    currentFocus: "Looking for full-time opportunities in Full Stack Development and AI Engineering where I can contribute to impactful projects while continuing to grow as an engineer.",
+    currentFocus: "Looking for a Python / AI Developer or Full-Stack Engineer role where I can build impactful AI agents, automation tools, and scalable systems.",
 
     social: {
         github: "https://github.com/premkumar-epic",
@@ -27,10 +32,10 @@ export const personalInfo = {
     },
 
     currentGoals: [
-        "Full-time job after graduation",
-        "Internship opportunities",
-        "Freelance/Contract work"
+        "Full-time Python / AI Developer Role",
+        "AI Agent & MCP Tool Development",
+        "Open-Source Engineering & Embedded Hardware Innovation"
     ],
 
-    targetRoles: ["Full Stack Web Developer", "AI Engineer", "Software Engineer"]
+    targetRoles: ["Python Developer", "AI Developer", "AI Engineer", "Full Stack Developer", "Backend Developer"]
 };

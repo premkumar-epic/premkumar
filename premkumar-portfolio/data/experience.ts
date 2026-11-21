@@ -14,38 +14,55 @@ export interface Experience {
 
 export const experiences: Experience[] = [
     {
+        company: "IVK Garments & Industrial Operations",
+        role: "Electronics Repair Technician & Operations",
+        type: "Contract",
+        location: "Bangalore, India",
+        startDate: "September 2026",
+        endDate: "Present",
+        current: true,
+        description: "Hands-on diagnostic repair of industrial electronic control boxes, servo motor drives, and variable-frequency inverter PCBs alongside a senior technician mentor, coupled with factory production batch analysis and ledger reconciliation.",
+        responsibilities: [
+            "Diagnose, repair, and bench-test industrial sewing machine electronic control boxes, servo motor drives, and inverter PCBs",
+            "Perform board-level fault isolation using multimeters, oscilloscopes, and regulated micro-soldering stations to replace blown MOSFETs, optocouplers, and power supply rails",
+            "Manage garment factory batch production cost analysis, dispatch tracking, and financial ledger reconciliation between IVK Garments and Afro Asia Exports",
+            "Design and test custom workbench power supplies and diagnostic tools for rapid hardware troubleshooting"
+        ],
+        technologies: ["Industrial Electronics", "PCB Diagnostics", "Servo Drives", "Inverter Control", "Micro-soldering", "Financial Analysis"]
+    },
+    {
+        company: "NetPy Technologies",
+        role: "Technical Intern (Software Engineering)",
+        type: "Internship",
+        location: "Hybrid (Bangalore)",
+        startDate: "October 2025",
+        endDate: "June 2026",
+        current: false,
+        description: "Architected core software components for M2i LMS (NetPy's Smart Learning Management System), integrating automated AI quiz generation from video curriculum content.",
+        responsibilities: [
+            "Designed and built full-stack application modules using Node.js, Express, TypeScript, and Django",
+            "Modeled normalized relational schemas with PostgreSQL and Prisma ORM, authoring 22 architectural specification modules",
+            "Implemented automated video-to-quiz AI pipelines and REST APIs for scalable student cohort assessment",
+            "Managed technical system administration, Git workflows, and sprint deliverables using Jira in an agile startup environment"
+        ],
+        technologies: ["Node.js", "Express", "TypeScript", "PostgreSQL", "Prisma ORM", "AI Integration", "Jira", "Linux"]
+    },
+    {
         company: "SAP Lab India (via Edunet Foundation)",
         role: "Technical Intern - Code Unnati Program",
         type: "Internship",
-        location: "Offline",
-        startDate: "2025",
-        endDate: "Present",
-        current: true,
-        description: "Part of SAP India's flagship CSR initiative focused on Industry 4.0 technologies including AI, ML, Cloud Computing, and IoT. Received hands-on training with SAP B1P, ABAP, and Analytics technologies.",
+        location: "Offline (Bangalore)",
+        startDate: "September 2025",
+        endDate: "June 2026",
+        current: false,
+        description: "Part of SAP India's flagship CSR initiative focused on Industry 4.0 technologies including AI, Machine Learning, Cloud Computing, and Computer Vision.",
         responsibilities: [
-            "Trained in AI/ML, Cloud Computing, and Computer Vision technologies",
-            "Worked with SAP B1P and ABAP platforms",
-            "Participated in Faculty Development Programs (FDPs)",
-            "Engaged with international certifications in SAP ABAP and Analytics"
+            "Trained in enterprise AI/ML architectures, Cloud Computing, and Computer Vision technologies",
+            "Worked with SAP Business One (B1P) and ABAP platforms to support enterprise workflows and business process automation",
+            "Participated in Faculty Development Programs (FDPs) and institutional development workshops",
+            "Engaged with international certifications in SAP ABAP and Enterprise Analytics"
         ],
-        technologies: ["AI/ML", "Cloud Computing", "SAP B1P", "ABAP", "Analytics"]
-    },
-    {
-        company: "Netpy (Startup)",
-        role: "Technical Intern",
-        type: "Internship",
-        location: "Hybrid",
-        startDate: "2025",
-        endDate: "Present",
-        current: true,
-        description: "Working with an innovative startup on cutting-edge projects involving modern web technologies and AI solutions.",
-        responsibilities: [
-            "Developing full-stack applications using MERN stack",
-            "Implementing AI/ML features in production applications",
-            "Collaborating with cross-functional teams",
-            "Contributing to product development and feature design"
-        ],
-        technologies: ["Django", "DevOps", "Jira"]
+        technologies: ["AI/ML", "Cloud Computing", "SAP B1P", "ABAP", "Computer Vision", "Analytics"]
     },
     {
         company: "Zetpeak",
@@ -55,16 +72,13 @@ export const experiences: Experience[] = [
         startDate: "March 2023",
         endDate: "January 2025",
         current: false,
-        description: "Managed AICTE internship programs, organized awareness sessions, and handled technical aspects for institutional events while collaborating with SEA Group of Institutions.",
+        description: "Managed AICTE internship programs, organized technical awareness sessions, and led engineering teams delivering web portals for institutional partners.",
         responsibilities: [
-            "Assigned jobs to interns and managed AICTE internship program",
-            "Organized and conducted multiple awareness sessions",
-            "Collaborated with SEA Group of Institutions for advertising and event organization",
-            "Managed all technical aspects for institutional functions and events",
-            "Oversawand managed social media pages for various initiatives",
-            "Developed and managed websites for the organization and partners",
-            "Initiated and implemented new events and programs"
+            "Assigned deliverables and managed technical milestones for student cohorts in the AICTE internship program",
+            "Led a cross-functional team of 5 developers to deliver web applications and institutional websites on schedule",
+            "Collaborated with SEA Group of Institutions for event technical infrastructure and promotional portals",
+            "Managed technical audiovisual setups and digital broadcast portals for annual festivals and conferences"
         ],
-        technologies: ["React", "Node.js", "WordPress", "Social Media Management", "Event Tech"]
+        technologies: ["React", "Node.js", "WordPress", "Team Leadership", "Project Management", "Event Tech"]
     }
 ];

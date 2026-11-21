@@ -20,23 +20,23 @@
 
 ```yaml
 name: Prem Kumar V
-role: AI/ML Engineer & Full-Stack Developer
-education: Final Year @ SEA College of Engineering & Technology (AI & ML)
-currently:
-  - SAP Lab India (Software Engineering Intern)
-  - Netpy (Full-Stack Development Intern)
+role: AI/ML Engineering Graduate & Python / AI Developer
+education: Graduated from SEA College of Engineering & Technology (AI & ML, 2026)
+status: Open for Python / AI Developer Roles
+internships:
+  - SAP Lab India (Code Unnati Technical Intern, Completed June 2026)
+  - Netpy (Technical Intern, Completed June 2026)
 location: Bangalore, India
-interests: [AI/ML, Full-Stack Development, IoT, Open Source]
+interests: [AI Agents, MCP, Full-Stack Development, Embedded Systems, Open Source]
 motto: "Transforming Ideas into Intelligent Solutions"
 ```
 
-- 🔭 Currently working on **Epic-Drive** (Zero-backend S3 file manager)
-- 🌱 Learning **Advanced AI/ML** and **System Design**
-- 💼 Interning at **SAP Lab India** and **Netpy**
-- 🎓 Graduating in **2026** with focus on **AI & Machine Learning**
-- 💬 Ask me about **React, Next.js, Python, TensorFlow, PyTorch**
+- 🔭 Creator of **[BrowseMCP](https://github.com/premkumar-epic/browsermcp)** (Open-source Playwright MCP server for AI agents)
+- 💼 Completed technical internships at **SAP Lab India** and **Netpy**
+- 🎓 Graduated with B.E. in **AI & Machine Learning** (SEA College of Engineering & Technology, VTU)
+- 💬 Ask me about **Python, TypeScript, MCP Servers, Playwright, Whisper, Node.js, React, C++**
 - 📫 Reach me at **premkumar.dev25@gmail.com**
-- ⚡ Fun fact: I build hardware projects and love IoT!
+- ⚡ Fun fact: I build custom hardware (RetroCam, Greenhouse LoRa IoT, 12-key macropads) and love embedded systems!
 
 ---
 
@@ -60,14 +60,14 @@ motto: "Transforming Ideas into Intelligent Solutions"
 
 ## 💼 Experience
 
-**🔹 SAP Lab India** - Software Engineering Intern (2025 - Present)  
-*Building enterprise-grade solutions with cutting-edge technologies*
+**🔹 SAP Lab India** - Technical Intern - Code Unnati Program (Sep 2025 – June 2026)  
+*AI/ML, Cloud Computing, SAP B1P and ABAP enterprise workflows*
 
-**🔹 Netpy** - Full-Stack Development Intern (2025 - Present)  
-*Developing scalable web applications and APIs*
+**🔹 Netpy** - Technical Intern (Oct 2025 – June 2026)  
+*Full-stack application development, AI/ML integrations, and CI/CD pipelines*
 
 **🔹 Zetpeak** - Assistant Manager (March 2023 – January 2025)  
-*Led technical initiatives, managed AICTE internship program, organized events*
+*Led technical initiatives, managed AICTE internship program, delivered web platforms*
 
 
 ---

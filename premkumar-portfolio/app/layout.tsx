@@ -9,9 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://premkumar.pro'),
-  title: "Prem Kumar | Portfolio",
-  description: "Portfolio of Prem Kumar V - AI/ML Student and Full-Stack Developer specializing in React, Node.js, Python, TensorFlow, and PyTorch.",
-  keywords: ["Prem Kumar", "Portfolio", "AI/ML", "Full Stack Developer", "Web Development"],
+  title: "Prem Kumar V | AI/ML Engineering Graduate & Python / AI Developer",
+  description: "Portfolio of Prem Kumar V - AI/ML Engineering Graduate, Creator of BrowseMCP, and Python / AI Developer specializing in AI agents, Playwright, MCP, and Full-Stack Systems.",
+  keywords: ["Prem Kumar", "BrowseMCP", "AI Developer", "Python Developer", "MCP", "AI/ML", "Full Stack Developer", "SEA College of Engineering"],
   authors: [{ name: "Prem Kumar V" }],
   icons: {
     icon: [
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://premkumar.pro",
-    title: "Prem Kumar | Portfolio",
-    description: "Showcasing projects in AI/ML and Full Stack Development.",
+    title: "Prem Kumar V | AI/ML Engineering Graduate & Python / AI Developer",
+    description: "Showcasing projects in AI Agents, MCP Servers, Python, and Full-Stack Engineering.",
     images: [
       {
         url: "/images/profile.jpg",
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prem Kumar | Portfolio",
-    description: "Showcasing projects in AI/ML and Full Stack Development.",
+    title: "Prem Kumar V | AI/ML Engineering Graduate & Python / AI Developer",
+    description: "Showcasing projects in AI Agents, MCP Servers, Python, and Full-Stack Engineering.",
     images: ["/images/profile.jpg"]
   }
 };

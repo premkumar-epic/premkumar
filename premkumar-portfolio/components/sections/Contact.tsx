@@ -129,6 +129,7 @@ export default function Contact() {
                                         href={personalInfo.social.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="GitHub Profile"
                                         className="w-10 h-10 bg-gray-100 dark:bg-black rounded-full flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition-all border dark:border-white/10"
                                     >
                                         <Github size={20} />
@@ -137,6 +138,7 @@ export default function Contact() {
                                         href={personalInfo.social.linkedin}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="LinkedIn Profile"
                                         className="w-10 h-10 bg-blue-50 dark:bg-blue-900/20 rounded-full flex items-center justify-center text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-500 dark:hover:text-white transition-all border dark:border-white/5"
                                     >
                                         <Linkedin size={20} />
@@ -145,6 +147,7 @@ export default function Contact() {
                                         href={personalInfo.social.twitter}
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        aria-label="Twitter Profile"
                                         className="w-10 h-10 bg-sky-50 dark:bg-sky-900/20 rounded-full flex items-center justify-center text-sky-500 dark:text-sky-400 hover:bg-sky-500 hover:text-white dark:hover:bg-sky-500 dark:hover:text-white transition-all border dark:border-white/5"
                                     >
                                         <Twitter size={20} />

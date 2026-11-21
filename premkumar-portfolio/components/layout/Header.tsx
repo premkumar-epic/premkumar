@@ -93,6 +93,7 @@ export default function Header() {
                     <button
                         onClick={toggleTheme}
                         className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors"
+                        aria-label="Toggle Dark Mode"
                     >
                         {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
                     </button>
@@ -100,6 +101,7 @@ export default function Header() {
                     <button
                         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         className="p-2 text-gray-900 dark:text-white"
+                        aria-label={mobileMenuOpen ? "Close Menu" : "Open Menu"}
                     >
                         {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
