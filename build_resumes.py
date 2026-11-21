@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Generate professional, ATS-optimized resume matching Prem Kumar V's background:
-Tailored for Tier-1 Enterprise & California Tech referral applications:
+Generate professional, ATS-optimized resume matching Prem Kumar V's background.
+Fully interactive with clickable hyperlinks for Portfolio, GitHub, LinkedIn, Email, and Project repositories.
+Targeted for Tier-1 Enterprise & California Tech referral applications:
 Cisco, Walmart Global Tech, Intuit, LinkedIn, Wells Fargo, Cambium Networks.
-Highlights: Software Engineering, Full Stack Web Architecture, AI & Agent Systems,
-Distributed Automation, Embedded Hardware/Diagnostics, and First Class with Distinction B.E.
 """
 
 import os
@@ -16,6 +15,27 @@ from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_RIGHT
 import docx
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+
+def add_docx_hyperlink(paragraph, url, text, color="1e40af", underline=True):
+    part = paragraph.part
+    r_id = part.relate_to(url, docx.opc.constants.RELATIONSHIP_TYPE.HYPERLINK, is_external=True)
+    hyperlink = docx.oxml.shared.OxmlElement('w:hyperlink')
+    hyperlink.set(docx.oxml.shared.qn('r:id'), r_id)
+    new_run = docx.oxml.shared.OxmlElement('w:r')
+    rPr = docx.oxml.shared.OxmlElement('w:rPr')
+    if color:
+        c = docx.oxml.shared.OxmlElement('w:color')
+        c.set(docx.oxml.shared.qn('w:val'), color)
+        rPr.append(c)
+    if underline:
+        u = docx.oxml.shared.OxmlElement('w:u')
+        u.set(docx.oxml.shared.qn('w:val'), 'single')
+        rPr.append(u)
+    new_run.append(rPr)
+    new_run.text = text
+    hyperlink.append(new_run)
+    paragraph._p.append(hyperlink)
+    return hyperlink
 
 def generate_pdf(output_paths):
     margin = 32
@@ -119,12 +139,21 @@ def generate_pdf(output_paths):
 
     story = []
 
-    # 1. Header
+    # 1. Header with Clickable Links
     story.append(Paragraph("Prem Kumar V", name_style))
     story.append(Spacer(1, 2))
     story.append(Paragraph("Software Engineer | Full Stack &amp; AI Systems Developer | Creator of BrowseMCP", tagline_style))
     story.append(Spacer(1, 2))
-    story.append(Paragraph("premkumar.dev25@gmail.com &nbsp;|&nbsp; +91 9986324074 &nbsp;|&nbsp; https://premkumar.pro &nbsp;|&nbsp; linkedin.com/in/premkumar-dev25 &nbsp;|&nbsp; github.com/premkumar-epic &nbsp;|&nbsp; Bangalore, India", contact_style))
+    
+    header_contact = (
+        '<a href="mailto:premkumar.dev25@gmail.com" color="#1e40af"><u>premkumar.dev25@gmail.com</u></a> &nbsp;|&nbsp; '
+        '+91 9986324074 &nbsp;|&nbsp; '
+        '<a href="https://premkumar.pro" color="#1e40af"><u>premkumar.pro</u></a> &nbsp;|&nbsp; '
+        '<a href="https://www.linkedin.com/in/premkumar-dev25/" color="#1e40af"><u>linkedin.com/in/premkumar-dev25</u></a> &nbsp;|&nbsp; '
+        '<a href="https://github.com/premkumar-epic" color="#1e40af"><u>github.com/premkumar-epic</u></a> &nbsp;|&nbsp; '
+        'Bangalore, India'
+    )
+    story.append(Paragraph(header_contact, contact_style))
     story.append(Spacer(1, 3))
 
     def add_section_header(title):
@@ -162,11 +191,11 @@ def generate_pdf(output_paths):
     story.append(t_sk)
     story.append(Spacer(1, 2))
 
-    # 4. Featured Engineering Projects
+    # 4. Featured Engineering Projects with Clickable Links
     add_section_header("Featured Engineering Projects")
 
-    def add_pdf_project(title_html, date_text, bullets):
-        t = Table([[Paragraph(title_html, item_title_style), Paragraph(date_text, item_date_style)]], colWidths=[385, 163])
+    def add_pdf_project(title_html, link_html, bullets):
+        t = Table([[Paragraph(title_html, item_title_style), Paragraph(link_html, item_date_style)]], colWidths=[385, 163])
         t.setStyle(TableStyle([
             ('VALIGN', (0,0), (-1,-1), 'TOP'),
             ('LEFTPADDING', (0,0), (-1,-1), 0),
@@ -181,7 +210,7 @@ def generate_pdf(output_paths):
     # BrowseMCP
     add_pdf_project(
         "<b>BrowseMCP</b> (Open-Source AI Agent Automation Protocol) — <i>Python, TypeScript, Playwright, MCP</i>",
-        "github.com/premkumar-epic/browsermcp",
+        '<a href="https://github.com/premkumar-epic/browsermcp" color="#1e40af"><u>github.com/.../browsermcp</u></a>',
         [
             "Architected an open-source Model Context Protocol (MCP) server providing autonomous AI agents reliable browser execution via Playwright.",
             "Engineered an accessibility-tree DOM snapshot parser (~80 tokens/step), reducing agent prompt token consumption by up to 90% vs vision models.",
@@ -192,7 +221,7 @@ def generate_pdf(output_paths):
     # AI Meeting Assistant
     add_pdf_project(
         "<b>AI-Powered Meeting Assistant</b> (Local-First NLP Engine) — <i>faster-whisper, BART, spaCy, FastAPI, React</i>",
-        "github.com/premkumar-epic/AI-Powered-Meeting_Assistant",
+        '<a href="https://github.com/premkumar-epic/AI-Powered-Meeting_Assistant" color="#1e40af"><u>github.com/.../Meeting_Assistant</u></a>',
         [
             "Developed enterprise-grade, privacy-first meeting intelligence engine running 100% locally on CPU without external API dependencies or data leakage.",
             "Integrated faster-whisper with CTranslate2 quantization (achieving 4x–8x inference acceleration on CPU), hierarchical BART summarization, and spaCy NER.",
@@ -203,7 +232,7 @@ def generate_pdf(output_paths):
     # M2i-LMS
     add_pdf_project(
         "<b>M2i-LMS</b> (Enterprise Learning Platform) — <i>Node.js, Express, TypeScript, PostgreSQL, Prisma ORM</i>",
-        "Enterprise Learning Platform",
+        '<font color="#334155">Enterprise Learning Platform</font>',
         [
             "Engineered core backend architectural modules for NetPy's Smart LMS, serving institutional cohorts with automated AI quiz synthesis.",
             "Modeled normalized relational schemas with PostgreSQL &amp; Prisma ORM, implemented typed REST APIs, and authored 22 system architecture specifications."
@@ -213,7 +242,7 @@ def generate_pdf(output_paths):
     # IVK Garments ERP
     add_pdf_project(
         "<b>IVK Garments ERP &amp; Financial Ledger Engine</b> — <i>Node.js, Supabase/PostgreSQL, React, PDF Generation</i>",
-        "Production Garment ERP",
+        '<font color="#334155">Production Garment ERP</font>',
         [
             "Developed end-to-end production ERP system for garment manufacturing: automated GST-compliant PDF invoicing, batch costing, and dispatch tracking.",
             "Implemented Row Level Security (RLS) on PostgreSQL and engineered transaction audit logging matching factory production batches against export dispatches."
@@ -223,7 +252,7 @@ def generate_pdf(output_paths):
     # Greenhouse LoRa IoT & RetroCam
     add_pdf_project(
         "<b>Greenhouse LoRa IoT &amp; RetroCam</b> (Distributed Embedded Systems) — <i>C++, ESP32, LoRa (SX1278), Pico W</i>",
-        "Distributed IoT &amp; Hardware",
+        '<a href="https://github.com/premkumar-epic/Greenhouse_Iot_LoRa" color="#1e40af"><u>github.com/.../Greenhouse_IoT</u></a>',
         [
             "Greenhouse IoT: Designed dual-layer telemetry network linking field sensors (ESP32 deep sleep) via 433MHz LoRa to an autonomous Pico W relay controller.",
             "RetroCam: Programmed modular C++ firmware for ESP32-CAM with live viewfinder, SPI SD photo capture, and single-pin 4-button resistor ladder ADC."
@@ -233,7 +262,7 @@ def generate_pdf(output_paths):
     # Hermes Knowledge Pipeline
     add_pdf_project(
         "<b>Hermes Knowledge Pipeline &amp; Homelab</b> — <i>Python, SQLite, Obsidian, Proxmox VE, Ollama</i>",
-        "AI Archiver &amp; Homelab",
+        '<font color="#334155">AI Archiver &amp; Homelab</font>',
         [
             "Built privacy-centric AI conversation archiver ingesting, deduplicating, and vector-indexing multi-model chats into SQLite and Obsidian knowledge base.",
             "Configured Proxmox VE virtualization server running automated systemd services, local Ollama LLM inference endpoints, and automated SSL lifecycle."
@@ -361,10 +390,19 @@ def generate_docx(output_paths):
     r_tag.font.bold = True
     r_tag.font.color.rgb = primary_hex
 
-    r_con = p_title.add_run("premkumar.dev25@gmail.com  |  +91 9986324074  |  https://premkumar.pro\nlinkedin.com/in/premkumar-dev25  |  github.com/premkumar-epic  |  Bangalore, India")
-    r_con.font.name = "Arial"
-    r_con.font.size = Pt(8.5)
-    r_con.font.color.rgb = gray_hex
+    p_con = doc.add_paragraph()
+    p_con.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    p_con.paragraph_format.space_before = Pt(0)
+    p_con.paragraph_format.space_after = Pt(2)
+    
+    add_docx_hyperlink(p_con, "mailto:premkumar.dev25@gmail.com", "premkumar.dev25@gmail.com")
+    p_con.add_run("  |  +91 9986324074  |  ")
+    add_docx_hyperlink(p_con, "https://premkumar.pro", "premkumar.pro")
+    p_con.add_run("  |  ")
+    add_docx_hyperlink(p_con, "https://www.linkedin.com/in/premkumar-dev25/", "linkedin.com/in/premkumar-dev25")
+    p_con.add_run("  |  ")
+    add_docx_hyperlink(p_con, "https://github.com/premkumar-epic", "github.com/premkumar-epic")
+    p_con.add_run("  |  Bangalore, India")
 
     def add_docx_heading(title):
         p = doc.add_paragraph()
@@ -422,7 +460,7 @@ def generate_docx(output_paths):
     # Projects
     add_docx_heading("Featured Engineering Projects")
 
-    def add_proj(name, stack, bullets):
+    def add_proj(name, stack, url, bullets):
         p = doc.add_paragraph()
         p.paragraph_format.space_before = Pt(3)
         p.paragraph_format.space_after = Pt(1)
@@ -430,17 +468,22 @@ def generate_docx(output_paths):
         rn.bold = True
         rn.font.name = "Arial"
         rn.font.size = Pt(9.5)
-        rs = p.add_run(stack)
+        rs = p.add_run(f"{stack} ")
         rs.italic = True
         rs.font.name = "Arial"
         rs.font.size = Pt(8.5)
         rs.font.color.rgb = gray_hex
+        if url:
+            p.add_run("(")
+            add_docx_hyperlink(p, url, url.replace("https://", ""))
+            p.add_run(")")
         for b in bullets:
             add_bullet(b)
 
     add_proj(
         "BrowseMCP (Open-Source AI Agent Automation Protocol)",
-        "Python, TypeScript, Playwright, MCP (github.com/premkumar-epic/browsermcp)",
+        "Python, TypeScript, Playwright, MCP",
+        "https://github.com/premkumar-epic/browsermcp",
         [
             "Architected an open-source Model Context Protocol (MCP) server providing autonomous AI agents reliable browser execution via Playwright.",
             "Engineered an accessibility-tree DOM snapshot parser (~80 tokens/step), reducing agent prompt token consumption by up to 90% vs vision models.",
@@ -450,7 +493,8 @@ def generate_docx(output_paths):
 
     add_proj(
         "AI-Powered Meeting Assistant (Local-First NLP Engine)",
-        "faster-whisper, BART, spaCy, FastAPI, React (github.com/premkumar-epic/AI-Powered-Meeting_Assistant)",
+        "faster-whisper, BART, spaCy, FastAPI, React",
+        "https://github.com/premkumar-epic/AI-Powered-Meeting_Assistant",
         [
             "Developed enterprise-grade, privacy-first meeting intelligence engine running 100% locally on CPU without external API dependencies or data leakage.",
             "Integrated faster-whisper with CTranslate2 quantization (achieving 4x–8x inference acceleration on CPU), hierarchical BART summarization, and spaCy NER.",
@@ -461,6 +505,7 @@ def generate_docx(output_paths):
     add_proj(
         "M2i-LMS (Enterprise Learning Platform)",
         "Node.js, Express, TypeScript, PostgreSQL, Prisma ORM",
+        None,
         [
             "Engineered core backend architectural modules for NetPy's Smart LMS, serving institutional cohorts with automated AI quiz synthesis.",
             "Modeled normalized relational schemas with PostgreSQL & Prisma ORM, implemented typed REST APIs, and authored 22 system architecture specifications."
@@ -470,6 +515,7 @@ def generate_docx(output_paths):
     add_proj(
         "IVK Garments ERP & Financial Ledger Engine",
         "Node.js, Supabase/PostgreSQL, React, PDF Generation",
+        None,
         [
             "Developed end-to-end production ERP system for garment manufacturing: automated GST-compliant PDF invoicing, batch costing, and dispatch tracking.",
             "Implemented Row Level Security (RLS) on PostgreSQL and engineered transaction audit logging matching factory production batches against export dispatches."
@@ -479,6 +525,7 @@ def generate_docx(output_paths):
     add_proj(
         "Greenhouse LoRa IoT & RetroCam (Distributed Embedded Systems)",
         "C++, ESP32, LoRa (SX1278), Pico W",
+        "https://github.com/premkumar-epic/Greenhouse_Iot_LoRa",
         [
             "Greenhouse IoT: Designed dual-layer telemetry network linking field sensors (ESP32 deep sleep) via 433MHz LoRa to an autonomous Pico W relay controller.",
             "RetroCam: Programmed modular C++ firmware for ESP32-CAM with live viewfinder, SPI SD photo capture, and single-pin 4-button resistor ladder ADC."
@@ -488,6 +535,7 @@ def generate_docx(output_paths):
     add_proj(
         "Hermes Knowledge Pipeline & Homelab",
         "Python, SQLite, Obsidian, Proxmox VE, Ollama",
+        None,
         [
             "Built privacy-centric AI conversation archiver ingesting, deduplicating, and vector-indexing multi-model chats into SQLite and Obsidian knowledge base.",
             "Configured Proxmox VE virtualization server running automated systemd services, local Ollama LLM inference endpoints, and automated SSL lifecycle."
