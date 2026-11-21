@@ -57,7 +57,7 @@ export default function Hero() {
                             transition={{ duration: 0.5, delay: 0.1 }}
                             className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-3 tracking-tight leading-[1.1]"
                         >
-                            Hi, I'm <span className="text-blue-600 dark:text-blue-500">Prem Kumar</span>
+                            Hi, I&apos;m <span className="text-blue-600 dark:text-blue-500">Prem Kumar</span>
                         </motion.h1>
 
                         {/* Role */}
@@ -149,7 +149,7 @@ export default function Hero() {
                                 Explore My Work →
                             </a>
                             <a href="#contact" className="px-8 py-3.5 bg-white dark:bg-transparent text-blue-600 dark:text-blue-500 font-bold rounded-full border-2 border-blue-600 dark:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all hover:-translate-y-0.5">
-                                Let's Connect
+                                Let&apos;s Connect
                             </a>
                         </motion.div>
 
@@ -273,7 +273,7 @@ export default function Hero() {
                                             </div>
                                         </div>
                                         <div className="text-zinc-400 text-[11px] italic bg-zinc-900/40 p-2 rounded border border-zinc-800/50">
-                                            "Building robust systems across AI agents, full-stack web architectures, and embedded IoT firmware."
+                                            &ldquo;Building robust systems across AI agents, full-stack web architectures, and embedded IoT firmware.&rdquo;
                                         </div>
                                     </div>
                                 )}

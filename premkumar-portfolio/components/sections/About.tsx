@@ -1,7 +1,6 @@
 "use client";
 
 import { skills, skillCategories } from "@/data/skills";
-import { personalInfo } from "@/data/personal";
 import { motion } from "framer-motion";
 import { Download, GraduationCap } from "lucide-react";
 
@@ -27,7 +26,7 @@ export default function About() {
                                 </h2>
                                 <div className="prose text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
                                     <p className="mb-4">
-                                        I'm an AI/ML engineering graduate who builds practical tools in Python, TypeScript, and embedded systems. I'm the creator of <span className="font-semibold text-gray-900 dark:text-white">BrowseMCP</span>, an open-source MCP browser automation tool that gives AI agents token-efficient web control via Playwright.
+                                        I&apos;m an AI/ML engineering graduate who builds practical tools in Python, TypeScript, and embedded systems. I&apos;m the creator of <span className="font-semibold text-gray-900 dark:text-white">BrowseMCP</span>, an open-source MCP browser automation tool that gives AI agents token-efficient web control via Playwright.
                                     </p>
                                     <p className="mb-4">
                                         My engineering work ranges from building local-first AI pipelines (transcription, recursive summarization, and NER task extraction) to scalable web applications using Node.js, PostgreSQL, and Prisma, as well as embedded C++ firmware for custom cameras and LoRa agriculture networks.
@@ -90,7 +89,7 @@ export default function About() {
                                         <span className="bg-blue-50 dark:bg-blue-950/40 border border-blue-100 dark:border-blue-900/40 px-2 py-0.5 rounded font-medium">GenAI Lab: 100/100</span>
                                     </div>
                                     <p className="text-sm text-gray-600 dark:text-gray-400 italic border-l-2 border-blue-200 dark:border-blue-800 pl-3 mt-4">
-                                        "Specialized in AI Agents, Model Context Protocol (MCP), Scalable Full-Stack Web Architectures, and Embedded Systems."
+                                        &ldquo;Specialized in AI Agents, Model Context Protocol (MCP), Scalable Full-Stack Web Architectures, and Embedded Systems.&rdquo;
                                     </p>
                                 </div>
                             </div>
